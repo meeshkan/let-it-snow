@@ -49,11 +49,13 @@ sixL = \lyricmode {
     (ba doo wee) Oh, the
 }
 
-
-\new ChoirStaff <<
-  \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" \one \new Lyrics \lyricsto "one" \oneL >>
-  \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" }  << \new Voice = "six" \six \new Lyrics \lyricsto "six" \sixL >>
->>
+\score {
+    \new ChoirStaff <<
+    \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" \one \new Lyrics \lyricsto "one" \oneL >>
+    \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" }  << \new Voice = "six" \six \new Lyrics \lyricsto "six" \sixL >>
+    >>
+    \midi {}
+}
 
 \header {
     title = "Let it snow"
@@ -67,5 +69,3 @@ sixL = \lyricmode {
     right-margin=2.0\cm
 }
 #(set-global-staff-size 15.87)
-
-\midi {}
