@@ -67,3 +67,5 @@ sixL = \lyricmode {
     right-margin=2.0\cm
 }
 #(set-global-staff-size 15.87)
+
+\midi {}
