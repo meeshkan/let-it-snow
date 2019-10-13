@@ -51,8 +51,8 @@ twoS = \relative c'' {
     cis8 b8 r4 r8 b4 b8 |
     e2 e |
     b8 b4 r8 r b8 ~ b4 |
-    gis'8 gis gis4 fis e8 dis ~ |
-    dis4 r4 r8 b b gis |
+    gis'8 gis gis4 fis eis8 e ~ |
+    e4 r4 r8 b b gis |
     r gis fis dis r fis dis cis |
     %\mark \markup { \musicglyph #"scripts.coda" }
 }
@@ -95,11 +95,11 @@ twoL = \lyricmode {
 }
 
 threeS = \relative c' {
-    cis8\f cis dis4 cis c |
+    cis8\f cis c4 cis c |
     b8 gis r4 r8 b4 b8 |
     cis2 d |
     a8 a4 r8 r gis8 ~ gis4 |
-    e'8 e eis4 e cis8 cis ~ |
+    e'8 e eis4 e d8 cis ~ |
     cis4 b8 b8 ~ b eis eis e |
     r e dis dis r dis cis b |
 }
@@ -141,12 +141,12 @@ threeL = \lyricmode {
 }
 
 fourS = \relative c' {
-    a8\f a c4 a a |
+    a8\f a a4 a a |
     gis8 gis r4 r8 gis4 gis8 |
     a2 bes |
     fis8 fis4 r8 r eis8 ~ eis4 |
-    cis'8 cis cis4 cis cis8 b ~ |
-    b4 gis8 gis8 ~ gis cis cis cis |
+    cis'8 cis cis4 cis b8 a ~ | % get rid of the 8 after the b for craziness!
+    a4 gis8 gis8 ~ gis cis cis cis |
     r cis cis a r a a gis |
 }
 
@@ -188,14 +188,13 @@ fourL = \lyricmode {
 }
 
 fiveS = \relative c {
-    e8\f e a4 fis dis |
+    e8\f e dis4 fis dis |
     e8 e r4 r8 gis4 gis8 |
     gis2 g |
     fis8 dis4 r8 r cis8 ~ cis4 |
-    a'8 a b4 cis gis8 a ~ |
-    a4 eis8 eis8 ~ eis fis gis a |
+    a'8 a b4 fis gis8 gis ~ |
+    gis4 eis8 eis8 ~ eis fis gis a |
     r a b fis r fis fis gis |
-
 }
 
 five = \relative c' {
@@ -239,8 +238,8 @@ sixS = \relative c, {
     gis8 gis d'4 cis gis8 g |
     fis4. fis8 c'4. c8 |
     b fis dis b r cis'4 eis,8 |
-    fis8 fis gis4 a ais8 b ~ |
-    b4 d8 cis ~ cis cis gis fis |
+    fis8 fis gis4 a eis8 fis ~ |
+    fis4 d'8 cis ~ cis cis gis fis |
     r gis a b r c b gis |
 }
 
@@ -256,9 +255,9 @@ six = \relative c {
         { r8 b a gis r g4 a8 | }
         { r b a gis r2 | }
     }
-    b4-. r fis-. r |
-    b4-. r dis-. d-. |
-    cis-. r fis,-. r |
+    r8 b r4 r8 fis r4 |
+    r8 b r4 r8 dis r8 d |
+    r8 cis r4 r8 fis, r4 |
     b8-. b' ais gis fis e dis cis |
     r8 b4 gis8 fis4 e8 fis |
     dis4 a' gis bis |
