@@ -168,7 +168,7 @@ three = \relative c' {
     b4-. b-. ais-. ais-. |
     b8-. b ais gis fis b4 b8  |
     cis4 b8 b b4 cis8 b ~ |
-    b b\ppp \times 2/3 { b dis\f dis } dis dis-. r cis, ~ |
+    b b\ppp \times 2/3 { b dis\f dis } dis dis-. r cis ~ |
     cis cis cis cis ~ cis cis cis e ~ |
     e e dis cis b b4\ppp b8 |
     cis8\f cis c4 cis c |
@@ -297,7 +297,7 @@ five = \relative c' {
     a'8 a b4 fis gis8 gis ~ |
     gis4. r8 r gis gis a |
     r a a a r fis dis e |
-    r gis a gis r a4 a8 ~ |
+    r gis a gis r fis4 a8 ~ |
     a8 a r4 r2 |
 }
 
@@ -332,7 +332,7 @@ six = \relative c, {
     fis8 a cis fis r cis eis, fis |
     r fis a b r b a gis |
     r8 b a gis r g4 a8 |
-    fis4 r8 fis b4 b8 b |
+    fis4. fis8 b4 b8 b |
     b'8 b a4 gis eis |
     fis2 r8 fis,4 fis8 |
     b8 dis fis b r eis, ~ eis4 |
@@ -355,12 +355,14 @@ six = \relative c, {
     fis8 fis gis4 a eis8 fis ~ |
     fis8 a cis fis r cis eis, fis |
     r fis a b r b a gis |
-    r8 b a gis r e4 g8 ~ |
+    r8 b a gis r aes4 g8 ~ |
     g8 g b4 d des |
     c8 a e'4 d c |
     b f' e bes |
     a ees' d c8 d |
-    b8 g
+    b8 g f'4 e d |
+    c gis a d8 c |
+    b4
 }
 
 sixL = \lyricmode {
