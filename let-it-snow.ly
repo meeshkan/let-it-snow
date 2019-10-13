@@ -29,6 +29,39 @@ one = \relative c' {
     fis b, \times 2/3 { dis fis gis } fis gis-. r b ~ |
     b ais gis ais ~ ais gis ais b ~ |
     b2 r8 b,4 b8 |
+    b'8 b a4 gis fis |
+    e8 b r4 r8 b4 b8 |
+    fis'4. e8 fis4. e8 |
+    dis8 b4 r8 r cis ~ cis4 |
+    cis'8 cis b4 a gis8 fis ~ |
+    fis4 r r8 dis' cis b |
+    r b a gis r gis fis e |
+    r b cis e-. r fis-. r b ~ |
+    b a g fis r2 |
+    r8 g r g r a r fis ~ |
+    fis g a r r2 |
+    r8 b, cis e-. r fis-. r b ~ |
+    b a g fis r2 |
+    r8 g r g r a r fis ~ |
+    fis g a r r2 |
+    r8 b, cis e-. r fis-. r cis' ~ |
+    cis b a gis r2 |
+    r8 a r a r b r gis ~ |
+    gis a b r r2 |
+    r8 b, cis e-. r fis-. r d' ~ |
+    d c b a r2 |
+    r8 c r c r d r b ~ |
+    b c d r r2 |
+    r8 b, cis e-. r fis a cis |
+    e e e e e e e e |
+    e e e dis-. r cis-. r e ~ |
+    e e e e e e e e |
+    gis gis gis fis r e r e ~ |
+    e e e e e e e e |
+    e e e dis-. r cis-. r e ~ |
+    e e e e e e e e |
+    e e-. r dis-. r cis-. r e ~ |
+    e d c d-. r c-. b
 }
 
 oneL = \lyricmode {
@@ -109,7 +142,7 @@ three = \relative c' {
     b8 gis r4 r8 b4 b8 |
     cis2 d |
     a8 a4 r8 r gis8 ~ gis4 |
-    e'8 e eis4 e d8 cis ~ |
+    e'8 e e4 e d8 cis ~ |
     cis4 b8 b8 ~ b eis eis e |
     r e dis cis r dis cis b |
     r b b cis r d4 b8\pp |
