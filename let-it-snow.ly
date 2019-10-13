@@ -324,7 +324,7 @@ six = \relative c, {
     \partial 4
     \clef bass
     r4 |
-    fis4 r8 fis b4 a8 b |
+    fis4. fis8 b4 a8 b |
     gis8 gis d'4 cis gis8 g |
     fis4. fis8 c'4. c8 |
     b fis dis b r cis'4 eis,8 |
