@@ -10,7 +10,7 @@ one = \relative c' {
     fis'4. e8 fis4. e8 |
     dis8 b4 r8 r cis ~ cis4 |
     cis'8 cis b4 a gis8 fis ~ |
-    fis4 r r8 dis' cis b |
+    fis4. r8 r8 dis' cis b |
     r b a gis r gis fis e |
     r b cis e r fis4 b,8 |
     b'8 b a4 gis fis |
@@ -18,7 +18,7 @@ one = \relative c' {
     fis'4. e8 fis4. e8 |
     dis8 b4 r8 r cis ~ cis4 |
     cis'8 cis b4 a gis8 fis ~ |
-    fis4 r r8 dis' cis b |
+    fis4. r8 r8 dis' cis b |
     r b a gis r gis fis e |
     r b cis e r dis4 cis8 |
     dis4-. dis-. e-. e-. |
@@ -34,7 +34,7 @@ one = \relative c' {
     fis'4. e8 fis4. e8 |
     dis8 b4 r8 r cis ~ cis4 |
     cis'8 cis b4 a gis8 fis ~ |
-    fis4 r r8 dis' cis b |
+    fis4. r8 r8 dis' cis b |
     r b a gis r gis fis e |
     r b cis e-. r fis-. r b ~ |
     b a g fis r2 |
@@ -93,16 +93,16 @@ two = \relative c' {
     e2 e |
     b8 b4 r8 r b8 ~ b4 |
     gis'8 gis gis4 fis eis8 e ~ |
-    e4 r4 r8 b' b gis |
-    r gis fis dis r fis dis cis |
+    e4. r8 r8 gis gis gis |
+    r gis fis dis r dis dis cis |
     r b cis cis r e4 b8\pp |
     gis'8\f gis fis4 dis dis |
     cis8 b8 r4 r8 b4 b8 |
     e2 e |
     b8 b4 r8 r b8 ~ b4 |
     gis'8 gis gis4 fis eis8 e ~ |
-    e4 r4 r8 b' b gis |
-    r gis fis dis r fis dis cis |
+    e4. r8 r8 gis gis gis |
+    r gis fis dis r dis dis cis |
     r b cis cis r b4 ais8 |
     b4-. b-. cis-. cis-. |
     dis-. dis-. f-. f-. |
@@ -143,16 +143,16 @@ three = \relative c' {
     cis2 d |
     a8 a4 r8 r gis8 ~ gis4 |
     e'8 e e4 e d8 cis ~ |
-    cis4 b8 b8 ~ b eis eis e |
-    r e dis cis r dis cis b |
+    cis4. r8 r eis eis e |
+    r e e dis r cis cis b |
     r b b cis r d4 b8\pp |
     cis8\f cis c4 cis c |
     b8 gis r4 r8 b4 b8 |
     cis2 d |
     a8 a4 r8 r gis8 ~ gis4 |
-    e'8 e eis4 e d8 cis ~ |
-    cis4 b8 b8 ~ b eis eis e |
-    r e dis cis r dis cis b |
+    e'8 e e4 e d8 cis ~ |
+    cis4. r8 r8 eis eis e |
+    r e e dis r cis cis b |
     r b b cis r fis,4 fisis8 |
     gis4-. gis-. gis-. gis-. |
     b-. dis8 b ~ b4. r8 |
@@ -167,12 +167,12 @@ three = \relative c' {
 threeL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire so light -- ful.
-    And since we've no place to go. (to go)
+    And since we've no place to go.
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     Oh, it does -- n't show signs of stop -- ping,
     And I've brought corn pop -- ping.
-    The lights are turned way down low, (down low)
+    The lights are turned way down low,
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     When we
@@ -193,16 +193,16 @@ four = \relative c' {
     a2 bes |
     fis8 fis4 r8 r eis8 ~ eis4 |
     cis'8 cis cis4 cis b8 a ~ | % get rid of the 8 after the b for craziness!
-    a4 gis8 gis8 ~ gis cis cis cis |
-    r cis cis a r a a gis |
+    a4. r8 r b b cis |
+    r cis bis cis r a a gis |
     r gis b b r b4 b8 |
     a8\f a a4 a a |
     gis8 gis r4 r8 gis4 gis8 |
     a2 bes |
     fis8 fis4 r8 r eis8 ~ eis4 |
     cis'8 cis cis4 cis b8 a ~ | % get rid of the 8 after the b for craziness!
-    a4 gis8 gis8 ~ gis cis cis cis |
-    r cis cis a r a a gis |
+    a4. r8 r b b cis |
+    r cis bis cis r a a gis |
     r gis b b r dis,4 e8 |
     fis8 gis fis4 dis b'8 fis ~ |
     fis2 r8 dis4 fis8 |
@@ -217,12 +217,12 @@ four = \relative c' {
 fourL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire so light -- ful.
-    And since we've no place to go. (to go)
+    And since we've no place to go.
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     Oh, it does -- n't show signs of stop -- ping,
     And I've brought corn pop -- ping.
-    The lights are turned way down low, (down low)
+    The lights are turned way down low,
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     When we
@@ -244,16 +244,16 @@ five = \relative c' {
     gis2 g |
     fis8 dis4 r8 r cis8 ~ cis4 |
     a'8 a b4 fis gis8 gis ~ |
-    gis4 eis8 eis8 ~ eis fis gis a |
-    r a b fis r fis fis gis |
+    gis4. r8 r gis gis a |
+    r a a a r fis dis e |
     r gis gis gis r a4 a8\mf |
     e8\f e dis4 fis dis |
     e8 e r4 r8 gis4 gis8 |
     gis2 g |
     fis8 dis4 r8 r cis8 ~ cis4 |
     a'8 a b4 fis gis8 gis ~ |
-    gis4 eis8 eis8 ~ eis fis gis a |
-    r a b fis r fis fis gis |
+    gis4. r8 r gis gis a |
+    r a a a r fis dis e |
     r gis gis gis r dis4 e8 |
     fis8 gis fis4 dis b'8 fis ~ |
     fis2 r8 dis4 fis8 |
@@ -268,12 +268,12 @@ five = \relative c' {
 fiveL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire so light -- ful.
-    And since we've no place to go. (to go)
+    And since we've no place to go.
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     Oh, it does -- n't show signs of stop -- ping,
     And I've brought corn pop -- ping.
-    The lights are turned way down low, (down low)
+    The lights are turned way down low,
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee) When we
     fi -- nal -- ly kissed Good Night.
@@ -293,16 +293,16 @@ six = \relative c, {
     fis4. fis8 c'4. c8 |
     b fis dis b r cis'4 eis,8 |
     fis8 fis gis4 a eis8 fis ~ |
-    fis4 d'8 cis ~ cis cis gis fis |
-    r gis a b r c b gis |
+    fis8 a cis fis r cis cis fis, |
+    r fis fis b r b b gis |
     r8 b a gis r g4 a8 |
     fis4 c' b a8 b |
     gis8 gis d'4 cis gis8 g |
     fis4. fis8 c'4. c8 |
     b fis dis b r cis'4 eis,8 |
     fis8 fis gis4 a eis8 fis ~ |
-    fis4 d'8 cis ~ cis cis gis fis |
-    r gis a b r c b gis |
+    fis a cis fis r cis cis fis, |
+    r fis fis b r b b gis |
     r b a gis r2 |
     r8 b r4 r8 fis r4 |
     r8 b r4 r8 dis r8 d |
@@ -320,7 +320,7 @@ sixL = \lyricmode {
     fire is so -- de
     ba di dum bow an -- da
     since we've no place to
-    go (to go)
+    go ba dit bow
     Let it Snow! Let it Snow! Let it Snow!
     (ba doo wee)
     Oh, it
@@ -328,8 +328,8 @@ sixL = \lyricmode {
     dm ba dm dm ba da
     fire is so -- de
     ba di dum bow an -- da
-    since we've no place to
-    go (to go)
+    lights are turned way down
+    low ba dit bow
     Let it Snow! Let it Snow! Let it Snow!
     (ba doo wee)
     dm dm dm dm dm dm dm
