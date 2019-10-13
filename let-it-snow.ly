@@ -1,27 +1,26 @@
 \version "2.19.83"
 
-oneS = \relative c'' {
-    b8 b a4 gis fis |
+one = \relative c' {
+    \key e \major
+    \partial 4
+    \clef "treble_8"
+    b8\f b |
+    b'8 b a4 gis fis |
     e8 b r4 r8 b4 b8 |
     fis'4. e8 fis4. e8 |
     dis8 b4 r8 r cis ~ cis4 |
     cis'8 cis b4 a gis8 fis ~ |
     fis4 r r8 dis' cis b |
     r b a gis r gis fis e |
-}
-
-one = \relative c' {
-    \key e \major
-    \partial 4
-    \clef "treble_8"
-    b8\f b |
-    \repeat volta 2 {
-        \oneS
-    }
-    \alternative  {
-        { r b cis e r fis4 b,8 | }
-        { r b cis e r dis4 cis8 | }
-    }
+    r b cis e r fis4 b,8 |
+    b'8 b a4 gis fis |
+    e8 b r4 r8 b4 b8 |
+    fis'4. e8 fis4. e8 |
+    dis8 b4 r8 r cis ~ cis4 |
+    cis'8 cis b4 a gis8 fis ~ |
+    fis4 r r8 dis' cis b |
+    r b a gis r gis fis e |
+    r b cis e r dis4 cis8 |
     dis4-. dis-. e-. e-. |
     fis-. fis-. gis-. gis-. |
     gis-. gis-. g-. g-. |
@@ -36,9 +35,14 @@ oneL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire is so de -- light -- ful.
     And since we've no place to go.
-    Let it snow let it snow let it snow.
-    (ba doo wee) Oh, the
-    (ba doo wee) When we
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    Oh, it does -- n't show signs of stop -- ping,
+    And I've brought some corn for pop -- ping.
+    The lights are turned way down low,
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    When we
     dut dut dut dut dut dut dut dut dut dut dut dut dut dut dut
     But if you real -- ly hold me tight
     You're hold -- ing me tight -- ly
@@ -46,30 +50,27 @@ oneL = \lyricmode {
     Oh the    
 }
 
-twoS = \relative c'' {
-    gis8\f gis fis4 dis dis |
-    cis8 b8 r4 r8 b4 b8 |
-    e2 e |
-    b8 b4 r8 r b8 ~ b4 |
-    gis'8 gis gis4 fis eis8 e ~ |
-    e4 r4 r8 b b gis |
-    r gis fis dis r fis dis cis |
-    %\mark \markup { \musicglyph #"scripts.coda" }
-}
-
 two = \relative c' {
     \key e \major
     \partial 4
     \clef "treble_8"
     b8\ppp b |
-    %\mark \markup { \musicglyph #"scripts.segno" }
-    \repeat volta 2 {
-        \twoS
-    }
-    \alternative {
-        { r b cis cis r e4 b8\pp | }
-        { r b cis cis r b4 ais8 | }
-    }
+    gis'8\f gis fis4 dis dis |
+    cis8 b8 r4 r8 b4 b8 |
+    e2 e |
+    b8 b4 r8 r b8 ~ b4 |
+    gis'8 gis gis4 fis eis8 e ~ |
+    e4 r4 r8 b' b gis |
+    r gis fis dis r fis dis cis |
+    r b cis cis r e4 b8\pp |
+    gis'8\f gis fis4 dis dis |
+    cis8 b8 r4 r8 b4 b8 |
+    e2 e |
+    b8 b4 r8 r b8 ~ b4 |
+    gis'8 gis gis4 fis eis8 e ~ |
+    e4 r4 r8 b' b gis |
+    r gis fis dis r fis dis cis |
+    r b cis cis r b4 ais8 |
     b4-. b-. cis-. cis-. |
     dis-. dis-. f-. f-. |
     e-. e-. e-. e-. |
@@ -84,9 +85,14 @@ twoL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire so light -- ful.
     And since we've no place to go.
-    Let it snow let it snow let it snow.
-    (ba doo wee) Oh, the
-    (ba doo wee) When we
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    Oh, it does -- n't show signs of stop -- ping,
+    And I've brought corn pop -- ping.
+    The lights are turned way down low,
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    When we
     dut dut dut dut dut dut dut dut dut dut dut dut dut dut dut
     But if you real -- ly hold me tight
     You're hold -- ing me tight -- ly
@@ -94,28 +100,27 @@ twoL = \lyricmode {
     Oh the 
 }
 
-threeS = \relative c' {
+three = \relative c' {
+    \key e \major
+    \partial 4
+    \clef "treble_8"
+    b8\ppp b |
     cis8\f cis c4 cis c |
     b8 gis r4 r8 b4 b8 |
     cis2 d |
     a8 a4 r8 r gis8 ~ gis4 |
     e'8 e eis4 e d8 cis ~ |
     cis4 b8 b8 ~ b eis eis e |
-    r e dis dis r dis cis b |
-}
-
-three = \relative c' {
-    \key e \major
-    \partial 4
-    \clef "treble_8"
-    b8\ppp b |
-    \repeat volta 2 {
-        \threeS
-    }
-    \alternative {
-        { r b b cis r d4 b8\pp | }
-        { r b b cis r fis,4 fisis8 | }
-    }
+    r e dis cis r dis cis b |
+    r b b cis r d4 b8\pp |
+    cis8\f cis c4 cis c |
+    b8 gis r4 r8 b4 b8 |
+    cis2 d |
+    a8 a4 r8 r gis8 ~ gis4 |
+    e'8 e eis4 e d8 cis ~ |
+    cis4 b8 b8 ~ b eis eis e |
+    r e dis cis r dis cis b |
+    r b b cis r fis,4 fisis8 |
     gis4-. gis-. gis-. gis-. |
     b-. dis8 b ~ b4. r8 |
     b4-. b-. ais-. ais-. |
@@ -130,9 +135,14 @@ threeL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire so light -- ful.
     And since we've no place to go. (to go)
-    Let it snow let it snow let it snow.
-    (ba doo wee) Oh, the
-    (ba doo wee) When we
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    Oh, it does -- n't show signs of stop -- ping,
+    And I've brought corn pop -- ping.
+    The lights are turned way down low, (down low)
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    When we
     dut dut dut dut dut (Good Night) dut dut dut dut dut I hate the storm
     But if you real -- ly hold me tight
     You're hold -- ing me tight -- ly
@@ -140,7 +150,11 @@ threeL = \lyricmode {
     Oh the 
 }
 
-fourS = \relative c' {
+four = \relative c' {
+    \key e \major
+    \partial 4
+    \clef "treble_8"
+    b8\ppp b |
     a8\f a a4 a a |
     gis8 gis r4 r8 gis4 gis8 |
     a2 bes |
@@ -148,20 +162,15 @@ fourS = \relative c' {
     cis'8 cis cis4 cis b8 a ~ | % get rid of the 8 after the b for craziness!
     a4 gis8 gis8 ~ gis cis cis cis |
     r cis cis a r a a gis |
-}
-
-four = \relative c' {
-    \key e \major
-    \partial 4
-    \clef "treble_8"
-    b8\ppp b |
-    \repeat volta 2 {
-        \fourS
-    }
-    \alternative {
-        { r gis b b r b4 b8 | }
-        { r gis b b r dis,4 e8 | }
-    }
+    r gis b b r b4 b8 |
+    a8\f a a4 a a |
+    gis8 gis r4 r8 gis4 gis8 |
+    a2 bes |
+    fis8 fis4 r8 r eis8 ~ eis4 |
+    cis'8 cis cis4 cis b8 a ~ | % get rid of the 8 after the b for craziness!
+    a4 gis8 gis8 ~ gis cis cis cis |
+    r cis cis a r a a gis |
+    r gis b b r dis,4 e8 |
     fis8 gis fis4 dis b'8 fis ~ |
     fis2 r8 dis4 fis8 |
     e4 e8 dis cis b4 cis8 |
@@ -176,9 +185,14 @@ fourL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire so light -- ful.
     And since we've no place to go. (to go)
-    Let it snow let it snow let it snow.
-    (ba doo wee) Oh, the
-    (ba doo wee) When we
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    Oh, it does -- n't show signs of stop -- ping,
+    And I've brought corn pop -- ping.
+    The lights are turned way down low, (down low)
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    When we
     fi -- nal -- ly kissed Good Night.
     How I hate go -- ing out to the storm.
     But if you real -- ly hold me tight
@@ -187,7 +201,19 @@ fourL = \lyricmode {
     Oh the 
 }
 
-fiveS = \relative c {
+five = \relative c' {
+    \key e \major
+    \partial 4
+    \clef "treble_8"
+    b8\ppp b |
+    e,8\f e dis4 fis dis |
+    e8 e r4 r8 gis4 gis8 |
+    gis2 g |
+    fis8 dis4 r8 r cis8 ~ cis4 |
+    a'8 a b4 fis gis8 gis ~ |
+    gis4 eis8 eis8 ~ eis fis gis a |
+    r a b fis r fis fis gis |
+    r gis gis gis r a4 a8\mf |
     e8\f e dis4 fis dis |
     e8 e r4 r8 gis4 gis8 |
     gis2 g |
@@ -195,20 +221,7 @@ fiveS = \relative c {
     a'8 a b4 fis gis8 gis ~ |
     gis4 eis8 eis8 ~ eis fis gis a |
     r a b fis r fis fis gis |
-}
-
-five = \relative c' {
-    \key e \major
-    \partial 4
-    \clef "treble_8"
-    b8\ppp b |
-    \repeat volta 2 {
-        \fiveS
-    }
-    \alternative {
-        { r gis gis gis r a4 a8\mf | }
-        { r gis gis gis r dis4 e8 | }
-    }
+    r gis gis gis r dis4 e8 |
     fis8 gis fis4 dis b'8 fis ~ |
     fis2 r8 dis4 fis8 |
     e4 e8 dis cis b4 cis8 |
@@ -223,8 +236,12 @@ fiveL = \lyricmode {
     Oh the wea -- ther out -- side is fright -- ful.
     But the fire so light -- ful.
     And since we've no place to go. (to go)
-    Let it snow let it snow let it snow.
-    (ba doo wee) Oh, the
+    Let It Snow! Let It Snow! Let It Snow!
+    (ba doo wee)
+    Oh, it does -- n't show signs of stop -- ping,
+    And I've brought corn pop -- ping.
+    The lights are turned way down low, (down low)
+    Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee) When we
     fi -- nal -- ly kissed Good Night.
     How I hate go -- ing out to the storm.
@@ -233,7 +250,11 @@ fiveL = \lyricmode {
     Oh the 
 }
 
-sixS = \relative c, {
+six = \relative c, {
+    \key e \major
+    \partial 4
+    \clef bass
+    r4 |
     fis4 c' b a8 b |
     gis8 gis d'4 cis gis8 g |
     fis4. fis8 c'4. c8 |
@@ -241,20 +262,15 @@ sixS = \relative c, {
     fis8 fis gis4 a eis8 fis ~ |
     fis4 d'8 cis ~ cis cis gis fis |
     r gis a b r c b gis |
-}
-
-six = \relative c {
-    \key e \major
-    \partial 4
-    \clef bass
-    r4 |
-    \repeat volta 2 {
-        \sixS
-    }
-    \alternative {
-        { r8 b a gis r g4 a8 | }
-        { r b a gis r2 | }
-    }
+    r8 b a gis r g4 a8 |
+    fis4 c' b a8 b |
+    gis8 gis d'4 cis gis8 g |
+    fis4. fis8 c'4. c8 |
+    b fis dis b r cis'4 eis,8 |
+    fis8 fis gis4 a eis8 fis ~ |
+    fis4 d'8 cis ~ cis cis gis fis |
+    r gis a b r c b gis |
+    r b a gis r2 |
     r8 b r4 r8 fis r4 |
     r8 b r4 r8 dis r8 d |
     r8 cis r4 r8 fis, r4 |
@@ -265,7 +281,6 @@ six = \relative c {
     b8 dis fis b r2 |
 }
 
-
 sixL = \lyricmode {
     dm ba dm ba da
     dm ba dm dm ba da
@@ -273,8 +288,16 @@ sixL = \lyricmode {
     ba di dum bow an -- da
     since we've no place to
     go (to go)
-    Let it snow let it snow let it snow.
-    (ba doo wee) Oh, the
+    Let it Snow! Let it Snow! Let it Snow!
+    (ba doo wee)
+    Oh, it
+    dm ba dm ba da
+    dm ba dm dm ba da
+    fire is so -- de
+    ba di dum bow an -- da
+    since we've no place to
+    go (to go)
+    Let it Snow! Let it Snow! Let it Snow!
     (ba doo wee)
     dm dm dm dm dm dm dm
     dm ba dm ba dm ba dm ba
