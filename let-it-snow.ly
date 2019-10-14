@@ -16,7 +16,7 @@ one = \relative c' {
     b'8 b a4 gis fis |
     e8 b r4 r8 b4 b8 |
     fis'4. e8 fis4. e8 |
-    dis8 b4 r8 r cis ~ cis4 |
+    dis8 b4 r8 r8 cis8 ~ cis4 |
     cis'8 cis b4 a gis8 fis ~ |
     fis4. r8 r8 dis' cis b |
     r b a gis r gis fis e |
@@ -103,9 +103,9 @@ two = \relative c' {
     gis'8\f gis fis4 dis dis |
     cis8 b8 r4 r8 b4 b8 |
     e2 e |
-    b8 b4 r8 r b8 ~ b4 |
-    eis2 ~ eis8 r eis8 e ~ |
-    e4. r8 r8 gis gis gis |
+    b8 b4 r8 r4. cis8 |
+    eis2 ~ eis8 r eis8 dis ~ |
+    dis4. r8 r8 gis gis gis |
     r gis fis fis r dis dis cis |
     r b cis cis r b4 ais8 |
     b4-. b-. cis-. cis-. |
@@ -121,7 +121,7 @@ two = \relative c' {
     e2 e |
     b8 ( dis b ) gis r8 cis4 b8 |
     \times 2/3 { gis'4 gis gis } fis eis8 e ~ ( |
-    e dis cisis dis-. ) \times 2/3 { r4 gis gis } |
+    e4 dis8 e-. ) \times 2/3 { r4 gis gis } |
     \times 2/3 { gis gis fis } fis8-. dis ( fis ) dis |
     cis-. b cis cis r e4 fis8 ~ |
     fis fis8-. r4 r2 |
@@ -166,10 +166,10 @@ three = \relative c' {
     cis8\f cis cis4 r8 cis4 c8 |
     b8 gis r4 r8 b4 b8 |
     cis2 cis |
-    a8 a4 r8 r gis8 ~ gis4 |
+    a8 a4 r8 r4 gis4 |
     a8 a gis4 fis eis8 fis ~ |
     fis4. r8 r8 eis' eis e |
-    r e4 dis8 r cis4 b8 |
+    r e e dis8 r cis cis b8 |
     r b b cis r fis,4 fisis8 |
     gis4-. gis-. gis-. gis-. |
     b-. dis8 b ~ b4. r8 |
@@ -183,8 +183,8 @@ three = \relative c' {
     b8 gis b cis \times 2/3 { r4 b b } |
     cis2 d |
     a8 ( b a ) fis r8 b4 gis8 |
-    \times 2/3 { eis'4 e e } e d8 cis ~ ( |
-    cis b ais cis ) \times 2/3 { r4 eis eis } |
+    \times 2/3 { e'4 e e } e d8 cis ~ ( |
+    cis b bis cis ) \times 2/3 { r4 eis eis } |
     \times 2/3 { e-. e e } dis8-. cis ( dis ) cis |
     b-. b b cis r cis4 d8 ~ |
     d8 d8 r4 r2 |
@@ -199,7 +199,7 @@ threeL = \lyricmode {
     Oh, it does -- n't show signs of stop -- ping,
     And I've brought corn pop -- ping.
     The lights are turned way down low,
-    Let It Snow! Let Snow! Let Snow!
+    Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     When we
     dut dut dut dut dut (Good Night) dut dut dut dut dut I hate the storm
@@ -229,7 +229,7 @@ four = \relative c' {
     a8\f a a4 r8 a4 a8 |
     b8 b r4 r8 gis4 gis8 |
     a2 ais |
-    fis8 fis4 r8 r2 |
+    fis8 fis4 r8 r4. b8 |
     a8 a b4 cis d8 cis ~ |
     cis8 cis b4 a gis8 fis |
     r cis' bis cis r a a gis |
@@ -242,14 +242,14 @@ four = \relative c' {
     b b \times 2/3 { b b b } b b-. r gis ~ |
     gis gis gis e ~ e e e fis ~ |
     fis b b fis fis b4 b8 |
-    ais8 ais ais4 a a |
+    ais4. ais8 a4 a |
     gis8 e gis b \times 2/3 { r4 gis gis } |
     a2 bes |
     fis8 ( gis fis ) dis r8 eis4 eis8 |
     \times 2/3 { cis'4 cis cis4 } cis b8 a ~ ( |
     a4 gis8 a ) \times 2/3 { r4 b b } |
     \times 2/3 { cis cis bis } cis8-. a ( b ) a |
-    fis-. gis gis b r b4 b8 ~ |
+    gis-. gis gis b r b4 b8 ~ |
     b8 b r4 r2 |
 }
 
@@ -261,7 +261,7 @@ fourL = \lyricmode {
     (ba doo wee)
     Oh, it does -- n't show signs of stop -- ping,
     And I've brought corn pop -- ping.
-    Lights are turned way down low, are turned way down low
+    The lights are turned way down low, are turned way down low
     Let It Snow! Let It Snow!
     (ba doo wee)
     When we
@@ -332,7 +332,7 @@ fiveL = \lyricmode {
     How I hate go -- ing out to the storm.
     But if you real hold me tight me tight -- ly
     All the way home I'll be warm (oh I'll be warm)
-    Oh the fi -- re is slow -- ly dy -- ing. (no no)
+    Oh the fire is slow -- ly dy -- ing. (no no)
     And my dear still bye -- ing.
     But as long as you love me so.
     Let It Snow! Let It Snow! Let It Snow!
@@ -355,7 +355,7 @@ six = \relative c, {
     fis4. fis8 b4 b8 b |
     b'8 b a4 gis eis |
     fis2 r8 fis,4 fis8 |
-    b8 dis fis b r eis, ~ eis4 |
+    b8 dis fis b r4 eis,4 |
     fis2 r8 cis4 cis8 |
     fis,4 cis'8 fis8 r8 eis,4 fis8 |
     r fis4 b8 r b4 e8 |
@@ -374,7 +374,7 @@ six = \relative c, {
     b fis dis b r cis'4 eis,8 |
     fis8 fis gis4 a eis8 fis ~ |
     fis8 a cis fis \times 2/3 { cis4 cis eis, } |
-    \times 2/3 { fis fis a } b8 b4 a8 |
+    \times 2/3 { fis fis a } b8 b4 b8 |
     gis8 b gis e r d4 g8 ~ |
     g8 g b4 d des |
     c8 a e'4 d c |
