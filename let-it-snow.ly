@@ -266,8 +266,8 @@ four = \relative c' {
     gis8 e gis b \times 2/3 { r4 gis gis } |
     a2 bes |
     fis8 ( gis fis ) dis r8 eis4 eis8 |
-    \times 2/3 { cis'4 cis cis4 } cis b8 a ~ ( |
-    a4 gis8 a ) \times 2/3 { r4 b b } |
+    \times 2/3 { cis'4 cis cis4 } cis b8 a ~ |
+    a2 \times 2/3 { r4 b b } |
     \times 2/3 { cis cis bis } cis8-. a ( b ) a |
     gis-. gis gis b r b4 b8 ~ |
     b8 b r4 r2 |
