@@ -100,7 +100,7 @@ two = \relative c' {
     e4. r8 r8 gis gis gis |
     r gis fis fis r dis dis cis |
     r b cis cis r e4 b8\pp |
-    gis'8\f gis fis4 r8 dis4 dis8 |
+    gis'8\f gis fis4 dis dis |
     cis8 b8 r4 r8 b4 b8 |
     e2 e |
     b8 b4 r8 r b8 ~ b4 |
