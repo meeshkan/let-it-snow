@@ -1,5 +1,12 @@
 \version "2.19.83"
 
+% studio
+% snow
+% party
+% dev
+% fire
+% sauna
+
 one = \relative c' {
     \key e \major
     \partial 4
