@@ -230,7 +230,7 @@ threeL = \lyricmode {
     And my dear still bye -- ing.
     But as long as you love me so.
     Let It Snow! Let It Snow! Let It Snow!
-    ba doo dat bap wee ba doo bap  
+    ba doo dat bap wee ba
 }
 
 four = \relative c' {
@@ -298,7 +298,7 @@ fourL = \lyricmode {
     And my dear still bye -- ing.
     But as long as you love me so.
     Let It Snow! Let It Snow! Let It Snow!
-    ba doo dat bap wee ba doo bap  
+    ba doo dat bap wee ba 
 }
 
 five = \relative c' {
@@ -364,7 +364,7 @@ fiveL = \lyricmode {
     And my dear still bye -- ing.
     But as long as you love me so.
     Let It Snow! Let It Snow! Let It Snow!
-    ba doo dat bap wee ba doo bap  
+    ba doo dat bap wee ba
 }
 
 six = \relative c, {
