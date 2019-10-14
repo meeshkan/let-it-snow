@@ -47,7 +47,7 @@ one = \relative c' {
     b a g fis r2 |
     r8 g r g r a r fis ~ |
     fis g a r r2 |
-    r8 b, cis e-. r fis-. r b ~ |
+    r8 b, c e-. r fis-. r b ~ |
     b a g fis r2 |
     r8 g r g r a r fis ~ |
     fis g a r r2 |
@@ -174,7 +174,7 @@ three = \relative c' {
     a8 a4 r8 r gis8 ~ gis4 |
     e'8 e e4 e d8 cis ~ |
     cis4. r8 r eis eis e |
-    r e e dis r cis cis b |
+    r e e dis r cis c b |
     r b b cis r d4 b8\pp |
     cis8\f cis cis4 r8 cis4 c8 |
     b8 gis r4 r8 b4 b8 |
@@ -182,7 +182,7 @@ three = \relative c' {
     a8 a4 r8 r4 gis4 |
     a8 a gis4 fis eis8 fis ~ |
     fis4. r8 r8 eis' eis e |
-    r e e dis8 r cis cis b8 |
+    r e e dis8 r cis c b8 |
     r b b cis r fis,4 fisis8 |
     gis4-. gis-. gis-. gis-. |
     b-. dis8 b ~ b4. r8 |
@@ -399,7 +399,7 @@ six = \relative c, {
     fis,4 r8 fis b4 a8 b |
     gis8 gis d'4 cis gis8 g |
     fis4 fis c'4 c |
-    b fis dis b r cis'4 eis,8 |
+    b8 fis dis b r cis'4 eis,8 |
     fis8 fis gis4 a eis8 fis ~ |
     fis8 a cis fis \times 2/3 { cis4 cis eis, } |
     \times 2/3 { fis fis a } b8 b4 b8 |
