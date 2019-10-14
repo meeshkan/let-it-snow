@@ -30,13 +30,13 @@ one = \relative c' {
     b ais gis ais ~ ais gis ais b ~ |
     b2 r8 b,4 b8 |
     b'8 b a4 gis fis |
-    e8 b r4 r8 b4 b8 |
-    fis'4. e8 fis4. e8 |
-    dis8 b4 r8 r cis ~ cis4 |
-    cis'8 cis b4 a gis8 fis ~ |
-    fis4. r8 r8 dis' cis b |
-    r b a gis r gis fis e |
-    r b cis e-. r fis-. r b ~ |
+    e8 b e gis-. \times 2/3 { r4 e eis } |
+    fis4. e8 fis4. e8 |
+    dis8 ( fis dis ) b r8 eis4 cis8 |
+    \times 2/3 { cis'4 cis b4 } a4 gis8 gis ~ ( |
+    gis fis eis fis-. ) \times 2/3 { r4 dis' cis } |
+    \times 2/3 { b-. b a } gis8-. gis ( b ) gis |
+    e-. b cis e-. r fis-. r b ~ |
     b a g fis r2 |
     r8 g r g r a r fis ~ |
     fis g a r r2 |
@@ -80,7 +80,11 @@ oneL = \lyricmode {
     But if you real -- ly hold me tight
     You're hold -- ing me tight -- ly
     All the way home I'll be warm
-    Oh the    
+    Oh the fi -- re is slow -- ly dy -- ing. (no no)
+    And my dear we're still good -- bye -- ing.
+    But as long as you love me so.
+    Let It Snow! Let It Snow! Let It Snow!
+    ba doo dat bap wee ba doo bap  
 }
 
 two = \relative c' {
@@ -113,13 +117,13 @@ two = \relative c' {
     e e e e ~ e e fis a ~ |
     a gis fis e dis b4\ppp b8 |
     gis'8\f gis fis4 dis dis |
-    cis8 b8 r4 r8 b4 b8 |
+    cis8 b cis e-. \times 2/3 { r4 b cis } |
     e2 e |
-    b8 b4 r8 r b8 ~ b4 |
-    gis'8 gis gis4 fis eis8 e ~ |
-    e4. r8 r8 gis gis gis |
-    r gis fis fis r dis dis cis |
-    r b cis cis r e4 fis8 ~ |
+    b8 ( dis b ) gis r8 cis4 b8 |
+    \times 2/3 { gis'4 gis gis } fis eis8 e ~ ( |
+    e dis cisis dis-. ) \times 2/3 { r4 gis gis } |
+    \times 2/3 { gis gis fis } fis8-. dis ( fis ) dis |
+    cis-. b cis cis r e4 fis8 ~ |
     fis fis8-. r4 r2 |
 }
 
@@ -139,7 +143,11 @@ twoL = \lyricmode {
     But if you real -- ly hold me tight
     You're hold -- ing me tight -- ly
     All the way home I'll be warm (oh I'll be warm)
-    Oh the 
+    Oh the fi -- re is slow -- ly dy -- ing. (no no)
+    And my dear still bye -- ing.
+    But as long as you love me so.
+    Let It Snow! Let It Snow! Let It Snow!
+    ba doo dat bap wee ba doo bap  
 }
 
 three = \relative c' {
@@ -172,13 +180,13 @@ three = \relative c' {
     cis cis cis cis ~ cis cis cis e ~ |
     e e dis cis b b4\ppp b8 |
     cis8\f cis c4 cis c |
-    b8 gis r4 r8 b4 b8 |
+    b8 gis b cis \times 2/3 { r4 b b } |
     cis2 d |
-    a8 a4 r8 r gis8 ~ gis4 |
-    e'8 e e4 e d8 cis ~ |
-    cis4. r8 r eis eis e |
-    r e e dis r cis cis b |
-    r b b cis r cis4 d8 ~ |
+    a8 ( b a ) fis r8 b4 gis8 |
+    \times 2/3 { eis'4 e e } e d8 cis ~ ( |
+    cis b ais cis ) \times 2/3 { r4 eis eis } |
+    \times 2/3 { e-. e e } dis8-. cis ( dis ) cis |
+    b-. b b cis r cis4 d8 ~ |
     d8 d8 r4 r2 |
 }
 
@@ -198,7 +206,11 @@ threeL = \lyricmode {
     But if you real -- ly hold me tight
     You're hold -- ing me tight -- ly
     All the way home I'll be warm (oh I'll be warm)
-    Oh the 
+    Oh the fi -- re is slow -- ly dy -- ing. (no no)
+    And my dear still bye -- ing.
+    But as long as you love me so.
+    Let It Snow! Let It Snow! Let It Snow!
+    ba doo dat bap wee ba doo bap  
 }
 
 four = \relative c' {
@@ -231,13 +243,13 @@ four = \relative c' {
     gis gis gis e ~ e e e fis ~ |
     fis b b fis fis b4 b8 |
     ais8 ais ais4 a a |
-    gis8 cis4 b8 gis8 gis4 gis8 |
+    gis8 e gis b \times 2/3 { r4 gis gis } |
     a2 bes |
-    fis8 fis4 r8 r eis8 ~ eis4 |
-    cis'8 cis cis4 cis b8 a ~ |
-    a4. r8 r b b cis |
-    r cis bis cis r a a fis |
-    r gis a b r b4 b8 ~ |
+    fis8 ( gis fis ) dis r8 eis4 eis8 |
+    \times 2/3 { cis'4 cis cis4 } cis b8 a ~ ( |
+    a4 gis8 a ) \times 2/3 { r4 b b } |
+    \times 2/3 { cis cis bis } cis8-. a ( b ) a |
+    fis-. gis gis b r b4 b8 ~ |
     b8 b r4 r2 |
 }
 
@@ -258,7 +270,11 @@ fourL = \lyricmode {
     But if you real -- ly hold me tight
     You're hold -- ing me tight -- ly
     All the way home I'll be warm (oh I'll be warm)
-    Oh the 
+    Oh the fi -- re is slow -- ly dy -- ing. (no no)
+    And my dear still bye -- ing.
+    But as long as you love me so.
+    Let It Snow! Let It Snow! Let It Snow!
+    ba doo dat bap wee ba doo bap  
 }
 
 five = \relative c' {
@@ -291,13 +307,13 @@ five = \relative c' {
     dis cis b cis ~ cis b cis cis ~ |
     cis b b b b8 b4\ppp b8 |
     e,8\f e dis4 fis dis |
-    e8 e r4 r8 gis4 gis8 |
+    e8 e e gis \times 2/3 { r4 fis fisis } |
     gis2 g |
-    fis8 dis4 r8 r cis8 ~ cis4 |
-    a'8 a b4 fis gis8 gis ~ |
-    gis4. r8 r gis gis a |
-    r a a a r fis dis e |
-    r gis a gis r fis4 a8 ~ |
+    fis8 ( dis4 ) b8 r cis4 d8 |
+    \times 2/3 { a'4 a b } fis gis8 gis ~ |
+    gis4. r8 \times 2/3 { r4 gis gis } |
+    \times 2/3 { a-. a a } a8 fis4 dis8 |
+    e-. gis e gis r fis4 a8 ~ |
     a8 a r4 r2 |
 }
 
@@ -316,7 +332,11 @@ fiveL = \lyricmode {
     How I hate go -- ing out to the storm.
     But if you real hold me tight me tight -- ly
     All the way home I'll be warm (oh I'll be warm)
-    Oh the 
+    Oh the fi -- re is slow -- ly dy -- ing. (no no)
+    And my dear still bye -- ing.
+    But as long as you love me so.
+    Let It Snow! Let It Snow! Let It Snow!
+    ba doo dat bap wee ba doo bap  
 }
 
 six = \relative c, {
@@ -353,9 +373,9 @@ six = \relative c, {
     fis4. fis8 c'4. c8 |
     b fis dis b r cis'4 eis,8 |
     fis8 fis gis4 a eis8 fis ~ |
-    fis8 a cis fis r cis eis, fis |
-    r fis a b r b a gis |
-    r8 b a gis r aes4 g8 ~ |
+    fis8 a cis fis \times 2/3 { cis4 cis eis, } |
+    \times 2/3 { fis fis a } b8 b4 a8 |
+    gis8 b gis e r d4 g8 ~ |
     g8 g b4 d des |
     c8 a e'4 d c |
     b f' e bes |
@@ -386,6 +406,14 @@ sixL = \lyricmode {
     dm you hold me so tight
     me tight -- ly
     All way home be warm dm da' bow
+    dm ba dm ba da
+    dm ba dm dm ba da
+    fire is so -- de
+    ba di dum bow an -- da
+    since we've no place to
+    go ba dit bow dm
+    Let It Snow! Let It Snow! Let It Snow!
+    ba doo dat bap wee ba doo bap
 }
 
 unfoldSwing = #(define-music-function (parser location tp) (integer?)
