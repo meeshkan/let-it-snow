@@ -436,8 +436,8 @@ sixL = \lyricmode {
     All way home be warm dm da' bow
     dm ba dm ba da
     dm ba dm dm ba da
-    fire is so -- de
-    ba di dum bow But as
+    dear we're still good --
+    bye di dum bow But as
     long as you love me
     so ba dit bow dm
     Let It Snow! Let It Snow! Let It Snow!
