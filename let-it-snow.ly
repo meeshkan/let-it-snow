@@ -104,8 +104,8 @@ two = \relative c' {
     cis8 b8 r4 r8 b4 b8 |
     e2 e |
     b8 b4 r8 r4. cis8 |
-    eis2 ~ eis8 r eis8 dis ~ |
-    dis4. r8 r8 gis gis gis |
+    eis2 ~ eis8 r eis8 gis, ~ |
+    gis4. r8 r8 gis' gis gis |
     r gis fis fis r dis dis cis |
     r b cis cis r b4 ais8 |
     b4-. b-. cis-. cis-. |
