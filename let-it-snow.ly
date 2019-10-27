@@ -302,7 +302,7 @@ three = \relative c' {
     fis fis fis fis fisis fisis fisis fisis |
     gis gis gis b-. r bes r a ~ |
     a a a a ais ais ais ais |
-    c c c b r a r g ~ |
+    a c c b r a r g ~ |
     g fis g f r dis4 d8 |
     r ees4 e8 r d4 fis8 ~ |
     fis fis dis dis r dis e dis ~ |
@@ -429,10 +429,10 @@ four = \relative c' {
     ees ees e des r cis4 bes8 |
     r cis4 c8 r bes4 e8 ~ |
     e e cis b r b cis c ~ |
-    c cis4 c8 r b4 cis8 ~ |
+    c cis4 c8 r c4 cis8 ~ |
     cis c cis bes r a4 g8 ~ |
     g b4 b8 r a4 r8 |
-    \times 2/3 { r4 cis dis } cis2 |
+    \times 2/3 { r4 cis dis } dis2 |
     \times 2/3 { r4 eis disis } eis disis |
     \key fis \major
     dis4 d dis4. d8 |
@@ -447,7 +447,7 @@ four = \relative c' {
     dis2 \times 2/3 { r4 b' b } |
     b2 \times 2/3 { r4 gis ais } |
     b2 cis4 b |
-    ais8 ais ais ais gis gis dis dis |
+    ais8 ais ais ais gis gis g g |
     eis eis eis fis r4 \bar "|."
 }
 
@@ -547,7 +547,7 @@ five = \relative c' {
     bes8 b c a r g4 fis8 |
     r gis4 a8 r fis4 aes8 ~ |
     aes a bes g r g gis gis ~ |
-    gis ais4 a8 r g4 a8 ~ |
+    gis ais4 a8 r ais4 a8 ~ |
     a ais b g r eis4 e8 ~ |
     e gis4 a8 r d,4 r8 |
     \times 2/3 { r4 ais' b } a2 |
@@ -565,7 +565,7 @@ five = \relative c' {
     ais4 b8 ais ~ \times 2/3 { ais4 ais ais } |
     dis,2 dis4 dis4 |
     cis2 cis4 cis |
-    fis8 fis fis fis dis dis dis dis |
+    fis8 fis fis fis dis dis eis eis |
     dis dis dis fis r4 \bar "|."
 }
 
@@ -656,21 +656,21 @@ six = \relative c, {
     c4 a ees' aes, |
     d8 a fis d ~ d d'-. r d, |
     g4 b d e8 d |
-    g b,8 ~ b4 e8 bes4 f'8 |
+    g b,8 ~ b4 e8 bes4 fis'8 |
     a,2 ais |
     b4. gis8-. r e-. r cis ~ |
     cis8 cis cis'4 d c |
-    b8 gis fis'4 f e8 d |
+    b8 gis e' c b4 e8 d |
     cis8 a4 a8 ais4 cis8 c |
-    b4 gis cis b8 bes |
-    a4 ais b e |
-    bes a ees' d8 d ~ |
+    b4 gis cis e, |
+    a2 ais4 b |
+    c8 a ~ a4 e4 ees8 d ~ |
     d d4 bes8 r b4 c8 |
-    r f,4 fis8 r g4 d8 ~ |
-    d d4 d8 ~ d g a d |
+    r f,4 fis8 r gis4 d8 ~ |
+    d d4 d8 ~ d fis a d |
     r fis,4 g8 r c4 b8 ~ |
-    b8 c d c ~ c b b a8 ~ |
-    a fis4 f8 \times 2/3 { r4 g a } |
+    b8 c d c r b4 a8 ~ |
+    a e4 f8 \times 2/3 { r4 g a } |
     b2 bis |
     cis2 ~ \times 2/3 { cis4 ais a } |
     \key fis \major
@@ -768,7 +768,7 @@ muzak = \new ChoirStaff <<
 }
 
 \score {
-    << { \unfoldRepeats \muzak } { \repeat unfold 312 { \unfoldSwing #44 } } >>
+    << { \unfoldRepeats \muzak } { \repeat unfold 312 { \unfoldSwing #98 } } >>
     \midi {}
 }
 
