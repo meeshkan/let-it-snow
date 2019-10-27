@@ -664,8 +664,8 @@ six = \relative c, {
     a4. a8 ais4 cis8 c |
     b4 gis fis e |
     cis'8 a8 ~ a4 cis4. c8 ~ |
-    c8 a4 e'8-. r fis8-. r d ~ |
-    d d4 bes8 r b4 c8 |
+    \times 4/6 { c4 a e' gis, fis'-. fis, } |
+    d'8 d, d' bes8 r b4 c8 |
     r f,4 fis8 r gis4 d8 ~ |
     d d4 d8 ~ d fis a d |
     r fis,4 g8 r c4 b8 ~ |
