@@ -420,7 +420,7 @@ four = \relative c' {
     r8 b, cis b r b cis e ~ |
     e cis cis cis cis cis cis cis |
     d d d fis-. r f r e ~ |
-    e e e e cis cis cis cis |
+    e e e e fis fis fis fis |
     dis dis dis d r d r cis ~ |
     cis cis cis cis cis cis cis cis |
     d d d fis-. r eis r fis ~ |
@@ -660,7 +660,7 @@ six = \relative c, {
     a,2 ais |
     b4. gis8-. r e-. r cis ~ |
     cis8 cis cis'4 d c |
-    b8 gis e'4 dis d |
+    b8 gis fis'4 f e8 d |
     cis8 a4 a8 ais4 cis8 c |
     b4 gis cis b8 bes |
     a4 ais b e |
