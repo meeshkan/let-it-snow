@@ -662,9 +662,9 @@ six = \relative c, {
     cis8 cis cis'4 d c |
     b8 gis e' c r b r bes |
     a4. a8 ais4 cis8 c |
-    b4 gis cis e, |
-    cis'8 a ~ a4 cis4. c8 ~ |
-    c8 a ~ a4 e'4 ees8 d ~ |
+    b4 gis fis e |
+    cis'8 a8 ~ a4 cis4. c8 ~ |
+    c8 a4 e'8-. r fis8-. r d ~ |
     d d4 bes8 r b4 c8 |
     r f,4 fis8 r gis4 d8 ~ |
     d d4 d8 ~ d fis a d |
