@@ -10,7 +10,7 @@
 one = \relative c' {
     \key e \major
     \partial 4
-    \clef "treble_8"
+    \tempo "Swung" 4=98
     b8\f b |
     b'8 b a4 gis fis |
     e8 b r4 r8 b4 b8 |
@@ -136,7 +136,6 @@ oneL = \lyricmode {
 two = \relative c' {
     \key e \major
     \partial 4
-    \clef "treble_8"
     b8\ppp b |
     gis'8\f gis fis4 dis dis |
     cis8 b8 r4 r8 b4 b8 |
@@ -249,7 +248,6 @@ twoL = \lyricmode {
 three = \relative c' {
     \key e \major
     \partial 4
-    \clef "treble_8"
     b8\ppp b |
     cis8\f cis cis4 cis c |
     b8 gis r4 r8 b4 b8 |
@@ -373,7 +371,6 @@ threeL = \lyricmode {
 four = \relative c' {
     \key e \major
     \partial 4
-    \clef "treble_8"
     b8\ppp b |
     a8\f a a4 a a |
     gis8 gis r4 r8 gis4 gis8 |
@@ -429,7 +426,7 @@ four = \relative c' {
     d d d fis-. r eis r fis ~ |
     fis fis fis fis fis fis fis fis |
     g g g fis r e r ees ~ |
-    ees e ees des r cis4 bes8 |
+    ees ees e des r cis4 bes8 |
     r cis4 c8 r bes4 e8 ~ |
     e e cis b r b cis c ~ |
     c cis4 c8 r b4 cis8 ~ |
@@ -497,7 +494,6 @@ fourL = \lyricmode {
 five = \relative c' {
     \key e \major
     \partial 4
-    \clef "treble_8"
     b8\ppp b |
     e,8\f e e4 fis dis |
     e8 e r4 r8 gis4 gis8 |
@@ -541,14 +537,14 @@ five = \relative c' {
     r8 b-. r b-. r c-. r b ~ |
     b cis dis-. r r2 |
     r8 b a aes r g-. r ees'8 ~ |
-    ees ees c bes8-. r2 |
+    ees ees c c8-. r2 |
     r8 d-. r e-. r e-. r d ~ |
     d e fis-. r r2 |
     r8 b, b b r b b b ~ |
     b1 |
     s1*6^\markup \italic "solo"
     s2.. bes8 ~ |
-    bes8 b c a r gis4 fis8 |
+    bes8 b c a r g4 fis8 |
     r gis4 a8 r fis4 aes8 ~ |
     aes a bes g r g gis gis ~ |
     gis ais4 a8 r g4 a8 ~ |
@@ -566,8 +562,8 @@ five = \relative c' {
     r b b b r gis eis fis ~ |
     fis r fis eis ~ \times 2/3 { eis4 eis eis ~ } |
     eis2 \times 2/3 { cis4 fis gis } |
-    ais'4 b8 ais ~ \times 2/3 { ais4 ais ais } |
-    dis2 dis4 dis4 |
+    ais4 b8 ais ~ \times 2/3 { ais4 ais ais } |
+    dis,2 dis4 dis4 |
     cis2 cis4 cis |
     fis8 fis fis fis dis dis dis dis |
     dis dis dis fis r4 \bar "|."
@@ -612,7 +608,6 @@ fiveL = \lyricmode {
 six = \relative c, {
     \key e \major
     \partial 4
-    \clef bass
     r4 |
     fis4. fis8 b4 a8 b |
     gis8 gis d'4 cis gis8 g |
@@ -670,12 +665,12 @@ six = \relative c, {
     b4 gis cis b8 bes |
     a4 ais b e |
     bes a ees' d8 d ~ |
-    d d r bes r b4 c8 |
-    r f,4 fis8 r g4 d'8 ~ |
-    d d r d,8 ~ d g a d |
+    d d4 bes8 r b4 c8 |
+    r f,4 fis8 r g4 d8 ~ |
+    d d4 d8 ~ d g a d |
     r fis,4 g8 r c4 b8 ~ |
-    b8 b b b ~ b b b b8 ~ |
-    b fis4 f8 \times 2/3 { r4 g a } |
+    b8 c d c ~ c b b a8 ~ |
+    a fis4 f8 \times 2/3 { r4 g a } |
     b2 bis |
     cis2 ~ \times 2/3 { cis4 ais a } |
     \key fis \major
@@ -759,12 +754,12 @@ unfoldSwing = #(define-music-function (parser location tp) (integer?)
 #})
 
 muzak = \new ChoirStaff <<
-    \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" \one \new Lyrics \lyricsto "one" \oneL >>
-    \new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" \two \new Lyrics \lyricsto "two" \twoL >>
-    \new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" \three \new Lyrics \lyricsto "three" \threeL >>
-    \new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" \four \new Lyrics \lyricsto "four" \fourL >>
-    \new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" \five \new Lyrics \lyricsto "five" \fiveL >>
-    \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" \six \new Lyrics \lyricsto "six" \sixL >>
+    \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" { \clef "treble_8" \one } \new Lyrics \lyricsto "one" \oneL >>
+    \new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" { \clef "treble_8" \two } \new Lyrics \lyricsto "two" \twoL >>
+    \new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" { \clef "treble_8" \three } \new Lyrics \lyricsto "three" \threeL >>
+    \new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" { \clef "treble_8" \four } \new Lyrics \lyricsto "four" \fourL >>
+    \new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" { \clef "treble_8" \five } \new Lyrics \lyricsto "five" \fiveL >>
+    \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" { \clef "bass" \six } \new Lyrics \lyricsto "six" \sixL >>
 >>
 
 \score {
@@ -773,7 +768,7 @@ muzak = \new ChoirStaff <<
 }
 
 \score {
-    << { \unfoldRepeats \muzak } { \repeat unfold 312 { \unfoldSwing #98 } } >>
+    << { \unfoldRepeats \muzak } { \repeat unfold 312 { \unfoldSwing #44 } } >>
     \midi {}
 }
 
