@@ -68,22 +68,22 @@ one = \relative c' {
     e8 e e dis-. r cis-. r e ~ |
     e2 ~ e8 e e e |
     e e-. r d-. r c-. r d ~ |
-    d c8 b c-. r bes4 a8-. |
-    r c4 b8-. r a4 d8 ~ |
-    d c b c-. r c b a-. |
-    r c4 b8-. r a4 b8 ~ |
-    b a gis a-. r gis r fis8-. |
-    r a4 gis8 ~ gis fis4 b8 ~ |
+    d c8 b c r bes4 a8 |
+    r c4 b8 r a4 d8 ~ |
+    d c b c r c b a |
+    r c4 b8 r a4 b8 ~ |
+    b a gis a r gis4 fis8 |
+    r a4 gis8 r fis4 b8 ~ |
     b2 \times 2/3 { r4 dis d } 
     cis2 \times 2/3 { r8 cis, ( dis } \times 2/3 { fis gis ) ais } |
     \key fis \major
     cis4 \times 2/3 { b8 ( cis b ) } ais4 \times 2/3 { gis8 ( ais gis ) } |
-    fis ( cis dis ) cis r cis4 cis8 |
-    gis'4.^\mordent fisis8 gis4 \times 2/3 { fis8 gis fis } |
+    fis ( cis dis ) cis r cis4 dis8 |
+    gis4.^\mordent fisis8 gis4 \times 2/3 { fis8 gis fis } |
     eis cis dis cis \times 2/3 { r4 e dis } |
     \times 2/3 { dis'4 dis cis } b4 ais8 gis ~ |
     gis fisis gis a r eis' dis cis |
-    r cis b ais r ais r fis ~ |
+    r cis b ais r ais gis fis ~ |
     fis r fis fisis ~ fisis4 fisis8 gis ~ |
     gis2 eis2 |
     fis4 gisis8 ais ~ \times 2/3 { ais4 eis' dis } |
@@ -186,16 +186,29 @@ two = \relative c' {
     s1*3 |
     s1*7
     s2.. a8 ~ |
-    a8 a a aes-. r fis r e |
-    r g-. r gis-. r e-. r bes' ~ |
-    bes gis g a-. r a fis fis ~ |
-    fis gis r fis r fis r gis ~ |
-    gis fis eis fis r dis r d ~ |
-    d eis r dis r e r fis ~ |
+    a8 a a aes r fis4 e8 |
+    r g4 gis8 r e4 bes'8 ~ |
+    bes gis g a r a fis fis ~ |
+    fis gis4 fis8 r fis4 gis8 ~ |
+    gis fis eis fis r dis4 d8 ~ |
+    d eis4 dis8 r e4 fis8 ~ |
     fis2 \times 2/3 { r4 fis fisis } |
     gis4 ( fisis8 gis ) \times 2/3 { r8 cis,4 ( } \times 2/3 { dis8 fis ) ais } |
     \key fis \major
     ais4 ( gis4 ~ gis ) b, |
+    cis8 ais4 gis8 fisis4 ais4 |
+    dis2 fis |
+    r8 cis-. r cis-. r cisis-. r eis ~ |
+    eis4. r8 \times 2/3 { dis4 dis cis } |
+    b4. ais8 gis ais' ais ais |
+    r ais gis gis r eis eis dis ~ |
+    dis r dis dis ~ dis4 dis8 dis ~ |
+    dis2 d |
+    cis4 e8 dis ~ \times 2/3 { dis4 ais' ais } |
+    ais ( gis ) fis dis |
+    cis dis eis cis |
+    dis8 dis d d cis cis c c |
+    b gisis ais fis r4 \bar "|."
 }
 
 twoL = \lyricmode {
@@ -292,16 +305,30 @@ three = \relative c' {
     gis gis gis b-. r bes r a ~ |
     a a a a ais ais ais ais |
     c c c b r a r g ~ |
-    g fis g f r dis r d |
-    r ees r e r d4 fis8 ~ |
+    g fis g f r dis4 d8 |
+    r ees4 e8 r d4 fis8 ~ |
     fis fis dis dis r dis e dis ~ |
-    dis e r e r dis r e ~ |
-    e dis dis d r cis r bes ~ |
-    bes cis r cis r cis r dis ~ |
+    dis e4 e8 r dis4 e8 ~ |
+    e dis dis d r cis4 bes8 ~ |
+    bes cis4 cis8 r cis4 dis8 ~ |
     dis2 \times 2/3 { r4 ais4 ais } |
     b2 \times 2/3 { r8 cis4 ~ ( } \times 2/3 { cis8 dis ) fis } |
     \key fis \major
     fis2. eis4 |
+    fis8 fis r eis, eis4 fis |
+    b2 e |
+    r8 b-. r b-. r b-. r b ~ |
+    b4. r8 \times 2/3 { b4 b ais } |
+    \times 2/3 { dis4 dis cis } b8 fisis' fisis eis |
+    r fis fis eis r dis d cis ~ |
+    cis r cis cis ~ \times 2/3 { cis4 eis dis } |
+    \times 2/3 { cis cis b } \times 2/3 { ais ais gis }
+    fis4 fis8 fisis ~ \times 2/3 { fisis4 fis' fis } |
+    fis ( eis ) dis fisis, |
+    gis b ais b |
+    cis8 cis c c b b ais ais |
+    gis fisis gis fis r4 \bar "|."
+
 }
 
 threeL = \lyricmode {
@@ -402,18 +429,29 @@ four = \relative c' {
     d d d fis-. r eis r fis ~ |
     fis fis fis fis fis fis fis fis |
     g g g fis r e r ees ~ |
-    ees e ees des r cis r bes |
-    r cis r c r bes r e ~ |
+    ees e ees des r cis4 bes8 |
+    r cis4 c8 r bes4 e8 ~ |
     e e cis b r b cis c ~ |
-    c cis r c r b r cis ~ |
-    cis c cis bes r a r g ~ |
-    g b r b r a r4 |
+    c cis4 c8 r b4 cis8 ~ |
+    cis c cis bes r a4 g8 ~ |
+    g b4 b8 r a4 r8 |
     \times 2/3 { r4 cis dis } cis2 |
     \times 2/3 { r4 eis disis } eis disis |
     \key fis \major
     dis4 d dis4. d8 |
-    \times 2/3 { cis4 eis e } dis d |
-    cis
+    \times 2/3 { cis4 eis e } dis cis |
+    b2 cis |
+    gis8 eis fis eis \times 2/3 { r4 fisis fisis } |
+    \times 2/3 { gis4 gis ais } \times 2/3 { gis gis dis } | % long as you long as you
+    gis8 gis ais4 b8 cis cis dis |
+    r dis cis dis r b b ais ~ |
+    ais r ais ais ~ \times 2/3 { ais4 ais ais } |
+    \times 2/3 { b gis gis } \times 2/3 { eis eis eis } |
+    dis2 \times 2/3 { r4 b' b } |
+    b2 \times 2/3 { r4 gis ais } |
+    b2 cis4 b |
+    ais8 ais ais ais gis gis dis dis |
+    eis eis eis fis r4 \bar "|."
 }
 
 fourL = \lyricmode {
@@ -510,17 +548,29 @@ five = \relative c' {
     b1 |
     s1*6^\markup \italic "solo"
     s2.. bes8 ~ |
-    bes8 b c a r gis r fis |
-    r gis r a r fis r aes ~ |
+    bes8 b c a r gis4 fis8 |
+    r gis4 a8 r fis4 aes8 ~ |
     aes a bes g r g gis gis ~ |
-    gis ais r a r g r a ~ |
-    a ais b g r eis r e ~ |
-    e gis r a r d, r4 |
+    gis ais4 a8 r g4 a8 ~ |
+    a ais b g r eis4 e8 ~ |
+    e gis4 a8 r d,4 r8 |
     \times 2/3 { r4 ais' b } a2 |
     \times 2/3 { r4 dis4 b } ais ais |
     \key fis \major
     b2 gis2 |
-    gis
+    gis4 ais ~ ais ais4 |
+    fis2 a |
+    r8 gis-. r gis-. r gis-. r fisis ~ |
+    fisis2 eis |
+    dis gis8 ais ais b |
+    r b b b r gis eis fis ~ |
+    fis r fis eis ~ \times 2/3 { eis4 eis eis ~ } |
+    eis2 \times 2/3 { cis4 fis gis } |
+    ais'4 b8 ais ~ \times 2/3 { ais4 ais ais } |
+    dis2 dis4 dis4 |
+    cis2 cis4 cis |
+    fis8 fis fis fis dis dis dis dis |
+    dis dis dis fis r4 \bar "|."
 }
 
 fiveL = \lyricmode {
@@ -611,7 +661,7 @@ six = \relative c, {
     c4 a ees' aes, |
     d8 a fis d ~ d d'-. r d, |
     g4 b d e8 d |
-    g cis,8 ~ cis4 e8 bes4 f'8 |
+    g b,8 ~ b4 e8 bes4 f'8 |
     a,2 ais |
     b4. gis8-. r e-. r cis ~ |
     cis8 cis cis'4 d c |
@@ -620,18 +670,29 @@ six = \relative c, {
     b4 gis cis b8 bes |
     a4 ais b e |
     bes a ees' d8 d ~ |
-    d d-. r bes r b r c |
-    r f, r fis  r g r d' ~ |
-    d d-. r d,8 ~ d g a d-. |
-    r fis, r g r c r b ~ |
+    d d r bes r b4 c8 |
+    r f,4 fis8 r g4 d'8 ~ |
+    d d r d,8 ~ d g a d |
+    r fis,4 g8 r c4 b8 ~ |
     b8 b b b ~ b b b b8 ~ |
-    b fis r f \times 2/3 { r4 g a } |
+    b fis4 f8 \times 2/3 { r4 g a } |
     b2 bis |
     cis2 ~ \times 2/3 { cis4 ais a } |
     \key fis \major
     gis4. gis8 cis4 b8 cis |
     ais4 e' dis a |
-    ais
+    gis4. gis8 d'4. d8 |
+    cis gis eis cis ~ cis cis'4 a8 |
+    gis4 ais b bis |
+    cis cisis dis ais |
+    gis bis cis g |
+    fis e' dis ais |
+    gis4 ais8 b cis dis eis cis |
+    fis8 f e dis ~ dis a4 ais8 |
+    gis4 gis' fis dis |
+    eis cis b gis |
+    fis ais b bis |
+    cis r8 fis8 r4 \bar "|."
 }
 
 sixL = \lyricmode {
