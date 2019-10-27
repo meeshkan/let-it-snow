@@ -633,12 +633,12 @@ six = \relative c, {
     dis4 a' gis bis |
     cis gis fis ais |
     b8 dis fis b r2 |
-    fis,4 r8 fis b4 a8 b |
+    fis,4. fis8 b4 a8 b |
     gis8 gis d'4 cis gis8 g |
     fis4 fis c'4 c |
     b8 fis dis b r cis'4 eis,8 |
     fis8 fis gis4 a eis8 fis ~ |
-    fis8 a cis fis \times 2/3 { cis4 cis eis, } |
+    fis8 a cis fis \times 2/3 { r4 cis eis, } |
     \times 2/3 { fis fis a } b8 b4 b8 |
     gis8 b gis e r d4 g8 ~ |
     g8 g b4 d des |
@@ -647,29 +647,29 @@ six = \relative c, {
     a ees' d aes |
     g b d des |
     c8 a e'4 d c8 d |
-    b8 a g4 bes f |
+    b4 g bes f |
     a ees' d g, |
     fis gis a ais |
     b fis ais f |
-    e8 e b'4 fis fisis |
+    e4 b' fis fisis |
     gis4 a ais b |
     c4 a ees' aes, |
     d8 a fis d ~ d d'-. r d, |
     g4 b d e8 d |
-    g b,8 ~ b4 e8 bes4 fis'8 |
+    g b,8 ~ b4 e8 bes4 e8 |
     a,2 ais |
     b4. gis8-. r e-. r cis ~ |
     cis8 cis cis'4 d c |
-    b8 gis e' c b4 e8 d |
-    cis8 a4 a8 ais4 cis8 c |
+    b8 gis e' c r b r bes |
+    a4. a8 ais4 cis8 c |
     b4 gis cis e, |
-    a2 ais4 b |
-    c8 a ~ a4 e4 ees8 d ~ |
+    cis'8 a ~ a4 cis4. c8 ~ |
+    c8 a ~ a4 e'4 ees8 d ~ |
     d d4 bes8 r b4 c8 |
     r f,4 fis8 r gis4 d8 ~ |
     d d4 d8 ~ d fis a d |
     r fis,4 g8 r c4 b8 ~ |
-    b8 c d c r b4 a8 ~ |
+    b2.. a8 ~ |
     a e4 f8 \times 2/3 { r4 g a } |
     b2 bis |
     cis2 ~ \times 2/3 { cis4 ais a } |
@@ -678,10 +678,10 @@ six = \relative c, {
     ais4 e' dis a |
     gis4. gis8 d'4. d8 |
     cis gis eis cis ~ cis cis'4 a8 |
-    gis4 ais b bis |
-    cis cisis dis ais |
-    gis bis cis g |
-    fis e' dis ais |
+    gis4 ais b fisis |
+    gis d' cis g |
+    gis bis cis b |
+    ais e' dis ais |
     gis4 ais8 b cis dis eis cis |
     fis8 f e dis ~ dis a4 ais8 |
     gis4 gis' fis dis |
@@ -716,7 +716,7 @@ sixL = \lyricmode {
     dear we're still good --
     bye di dum bow But as
     long as you love me
-    so ba dit bow dm
+    so ba dit bow
     Let It Snow! Let It Snow! Let It Snow!
     ba doo dat bap wee ba dm dm dm
     dm ba dm dm bm da
