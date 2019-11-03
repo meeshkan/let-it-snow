@@ -79,16 +79,16 @@ one = \relative c' {
     \key fis \major
     cis4 \times 2/3 { b8 ( cis b ) } ais4 \times 2/3 { gis8 ( ais gis ) } |
     fis ( cis dis ) cis r cis4 dis8 |
-    gis4.^\mordent fis8 gis4 \times 2/3 { fis8 gis fis } |
-    eis cis dis cis r8 e4 dis8 |
-    \times 2/3 { dis'4 dis cis } b4 ais8 gis ~ |
-    gis fisis gis4 r8 eis' dis cis |
+    gis4.^\mordent fis8 gis4 \times 2/3 { fis8 ( gis fis ) } |
+    eis ( cis dis ) cis r8 e4 dis8 |
+    \times 2/3 { dis'4 dis cis } b4 ais8 gis ~ ( |
+    gis fisis gis4 ) r8 eis' dis cis |
     r cis b ais r ais gis fis ~ |
-    fis r fis fisis ~ fisis4 fisis8 gis ~ |
+    fis r fis fisis ~ fisis4 fisis8 gis ~ ( |
     gis2 eis2 |
-    fis4 gisis8 ais ~ \times 2/3 { ais4 eis' dis } |
+    fis4 ) gisis8 ais ~ \times 2/3 { ais4 eis' dis } |
     cis2 \times 2/3 { r4 cis b } |
-    ais4 gisis ais gis |
+    ais4 ( gisis ) ais gis |
     fis8 fis e fis dis fis d fis |
     cis gisis ais fis r4 \bar "|." % end
 }
@@ -131,6 +131,13 @@ oneL = \lyricmode {
     you know that I
     I'll be warm
     Oh the fire is slow -- ly dy -- ing
+    And my dear we're still good -- bye -- ing.
+    But as long as you love me so.
+    Let It Snow! Let It Snow! Let It Snow!
+    doo wee doo wa
+    doo wa
+    Let It Snow! Let It Snow! Let It Snow!
+    Oh don't you know you keep me warm when it's cold.
 }
 
 two = \relative c' {
@@ -201,11 +208,11 @@ two = \relative c' {
     eis4. r8 \times 2/3 { dis4 dis cis } |
     b4. ais8 gis ais' ais ais |
     r ais gis gis r eis eis dis ~ |
-    dis r dis dis ~ dis4 dis8 dis ~ |
+    dis r dis dis ~ dis4 dis8 dis ~ ( |
     dis2 d |
-    cis4 e8 dis ~ \times 2/3 { dis4 ais' ais } |
+    cis4 ) e8 dis ~ \times 2/3 { dis4 ais' ais } |
     ais ( gis ) fis dis |
-    cis dis eis cis |
+    cis ( dis ) eis cis |
     dis8 dis d d cis cis c c |
     b gisis ais fis r4 \bar "|."
 }
@@ -243,6 +250,15 @@ twoL = \lyricmode {
     you know that I
     I'll be warm
     Oh the fire is dy -- ing
+    no dy -- ing
+    dear still
+    bap bap bap bow
+    long as you love me so
+    Let It Snow! Let It Snow! Let It Snow!
+    doo wee doo wa
+    doo wa
+    Let It Snow! Let It Snow! Let It Snow!
+    Oh don't you know you keep me warm when it's cold.
 }
 
 three = \relative c' {
@@ -325,7 +341,7 @@ three = \relative c' {
     \times 2/3 { cis cis b } \times 2/3 { ais ais gis }
     fis4 fis8 fisis ~ \times 2/3 { fisis4 fis' fis } |
     fis ( eis ) dis fisis, |
-    gis b ais b |
+    gis ( b ) ais b |
     cis8 cis c c b b ais ais |
     gis fisis gis fis r4 \bar "|."
 
@@ -364,10 +380,21 @@ threeL = \lyricmode {
     can -- not sing the tune but I am try -- ing Oh when we fi -- nal -- ly
     kissed good -- night
     you know I hate go -- ing out to the storm
-    but babe when you real -- ly hold me tight
-    you know that I
+    but babe when you real -- ly you real -- ly hold me tight
+    you
+    I'll
     I'll be warm
     Oh the fire is dy -- ing
+    no dy -- ing
+    dear still
+    bap bap bap bow
+    long as you long as you love
+    Let It Snow! Let It Snow! Let It Snow!
+    doo wee
+    Let It Snow! Let It Snow! Let It Snow!
+    doo wa
+    Let It Snow! Let It Snow! Let It Snow!
+    Oh don't you know you keep me warm when it's cold.
 }
 
 four = \relative c' {
@@ -440,7 +467,7 @@ four = \relative c' {
     dis4 d dis4. d8 |
     \times 2/3 { cis4 eis e } dis cis |
     b2 cis |
-    gis8 eis fis eis \times 2/3 { r4 fisis fisis } |
+    gis8 ( eis fis ) eis \times 2/3 { r4 fisis fisis } |
     \times 2/3 { gis4 gis ais } \times 2/3 { gis gis dis } | % long as you long as you
     gis8 gis ais4 b8 cis cis dis |
     r dis cis dis r b b ais ~ |
@@ -487,10 +514,19 @@ fourL = \lyricmode {
     can -- not sing the tune but I am try -- ing Oh when we fi -- nal -- ly
     kissed good -- night
     you know I hate go -- ing out to the storm
-    but babe when you real -- ly hold me tight
-    you know that know that I
+    but babe when you
+    you real -- ly hold me
+    that I know that I'll
     I'll be warm
     the fire is slow -- ly dyn' no it's dy -- ing
+    dear still
+    bye -- ing.
+    But as long as you long as you long as you love
+    Let It Snow! Let It Snow! Let It Snow!
+    doo wee
+    Let It Snow! Let It Snow! Let It Snow!
+    Let It Snow! Let It Snow! Let It Snow!
+    Oh don't you know you keep me warm when it's cold.
 }
 
 five = \relative c' {
@@ -602,11 +638,21 @@ fiveL = \lyricmode {
     fi -- nal -- ly
     kissed good -- night
     you know I hate go -- ing out to the storm
-    but babe when you real -- ly hold me tight
-    you know that know that I
+    but babe when you
+    you real -- ly hold me tight
+    know that I
     I'll be warm
-    the fire is dy -- ing 
-
+    the fire is dy -- ing
+    my dear
+    still
+    bap bap bap bow 
+    as long so
+    Let It Snow! Let It Snow! Let It Snow!
+    doo wee doo wa
+    Snow! Let It Snow!
+    doo wa
+    Let It Snow! Let It Snow! Let It Snow!
+    Oh don't you know you keep me warm when it's cold.
 }
 
 six = \relative c, {
@@ -727,31 +773,27 @@ sixL = \lyricmode {
     long as you love me
     so ba dit bow
     Let It Snow! Let It Snow! Let It Snow!
-    ba doo dat bap wee ba dm dm dm
-    dm ba dm dm bm da
-    \repeat unfold 8 dm
+    ba doo dat bap wee ba
+    \repeat unfold 107 ○
+    ly kissed good -- night
+    you know I hate go out to the storm
+    but babe when you
+    know that
+    I'll be warm
+    Oh the fire
+    ba dm ba da
     dm dm dm dm
-    dm ba dm dm bm da
+    dear we're still good
+    bye ba dit bow
+    But as long you love me
+    so, you love me so bow ba
     \repeat unfold 8 dm
-    \repeat unfold 8 dm
-    dm ba dm dm dm
-    \repeat unfold 8 dm
-    dm ba dit bow bap ba
-    dm dm dm ba da dit bow dit bow da
-    dm dm dm ba ba
-    dm ba dm dm dm
-    dm dm dm dm
-    dt bow ba dm dm ba
-    dm dm dm bm da
-    dm dm dm dm
-    dm dm dm dit fi -- nal
-    kiss good -- night
-    you know I hate it
-    dm ba dit bow
-    but babe when you real -- ly hold -- in' me tight
-    you know, know that I'll be warm oh the fire
-    ba dm dm ba
-    dm dm dm dm
+    dm warm me up when it is cold
+    no it's cold Let It
+    Snow! dm Let It
+    Snow! dm Let It
+    dm you keep me warm
+    cold.
 }
 
 unfoldSwing = #(define-music-function (parser location tp) (integer?)
