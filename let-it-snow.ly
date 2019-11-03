@@ -636,9 +636,7 @@ fiveL = \lyricmode {
     Let It Snow! Let It Snow! Let It Snow!
     ba doo wee bap wee ba
     bap bap ba ba da da
-        ba doo dat bap wee ba
-        bap bap ba ba da da
-    \repeat unfold 1 {
+    \repeat unfold 2 {
         ba doo dat bap wee ba doo bap
         bap bap ba ba da da
     }
@@ -750,7 +748,7 @@ six = \relative c, {
     gis4 gis' fis dis |
     eis cis b gis |
     fis ais b bis |
-    cis r8 fis8 r4 \bar "|."
+    cis r8 fis,8 r4 \bar "|."
 }
 
 sixL = \lyricmode {
