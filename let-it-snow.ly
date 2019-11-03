@@ -79,10 +79,10 @@ one = \relative c' {
     \key fis \major
     cis4 \times 2/3 { b8 ( cis b ) } ais4 \times 2/3 { gis8 ( ais gis ) } |
     fis ( cis dis ) cis r cis4 dis8 |
-    gis4.^\mordent fisis8 gis4 \times 2/3 { fis8 gis fis } |
-    eis cis dis cis \times 2/3 { r4 e dis } |
+    gis4.^\mordent fis8 gis4 \times 2/3 { fis8 gis fis } |
+    eis cis dis cis r8 e4 dis8 |
     \times 2/3 { dis'4 dis cis } b4 ais8 gis ~ |
-    gis fisis gis a r eis' dis cis |
+    gis fisis gis4 r8 eis' dis cis |
     r cis b ais r ais gis fis ~ |
     fis r fis fisis ~ fisis4 fisis8 gis ~ |
     gis2 eis2 |
@@ -189,8 +189,8 @@ two = \relative c' {
     r g4 gis8 r e4 bes'8 ~ |
     bes gis g a r a fis fis ~ |
     fis gis4 fis8 r fis4 gis8 ~ |
-    gis fis eis fis r dis4 d8 ~ |
-    d eis4 dis8 r e4 fis8 ~ |
+    gis fis eis fis r e4 dis8 ~ |
+    dis e4 dis8 r e4 fis8 ~ |
     fis2 \times 2/3 { r4 fis fisis } |
     gis4 ( fisis8 gis ) \times 2/3 { r8 cis,4 ( } \times 2/3 { dis8 fis ) ais } |
     \key fis \major
@@ -307,8 +307,10 @@ three = \relative c' {
     r ees4 e8 r d4 fis8 ~ |
     fis fis dis dis r dis e dis ~ |
     dis e4 e8 r dis4 e8 ~ |
-    e dis dis d r cis4 bes8 ~ |
-    bes cis4 cis8 r cis4 dis8 ~ |
+    %e dis dis d r cis4 bes8 ~ |
+    %bes cis4 cis8 r cis4 dis8 ~ |
+    e dis dis dis ~ dis cis b8 cis8 |
+    r8 b r a r cis r dis8 ~ |
     dis2 \times 2/3 { r4 ais4 ais } |
     b2 \times 2/3 { r8 cis4 ~ ( } \times 2/3 { cis8 dis ) fis } |
     \key fis \major
@@ -430,9 +432,9 @@ four = \relative c' {
     r cis4 c8 r bes4 e8 ~ |
     e e cis b r b cis c ~ |
     c cis4 c8 r c4 cis8 ~ |
-    cis c cis bes r a4 g8 ~ |
-    g b4 b8 r a4 r8 |
-    \times 2/3 { r4 cis dis } dis2 |
+    cis4. b8 ~ b a gis a |
+    r gis r fis r a r ais ~ |
+    \times 2/3 { ais4 cis dis } dis2 |
     \times 2/3 { r4 eis disis } eis disis |
     \key fis \major
     dis4 d dis4. d8 |
@@ -548,9 +550,11 @@ five = \relative c' {
     r gis4 a8 r fis4 aes8 ~ |
     aes a bes g r g gis gis ~ |
     gis ais4 a8 r ais4 a8 ~ |
-    a ais b g r eis4 e8 ~ |
-    e gis4 a8 r d,4 r8 |
-    \times 2/3 { r4 ais' b } a2 |
+    %a ais b g r eis4 e8 ~ |
+    %e gis4 a8 r d,4 r8 |
+    a2. r8 b ~ |
+    b a gis a r gis r fis |
+    \times 2/3 { r4 ais b } a2 |
     \times 2/3 { r4 dis4 b } ais ais |
     \key fis \major
     b2 gis2 |
@@ -664,13 +668,17 @@ six = \relative c, {
     a4. a8 ais4 cis8 c |
     b4 gis fis e |
     cis'8 a8 ~ a4 cis4. c8 ~ |
-    \times 4/6 { c4 a-_ e'-_ gis,-_ fis'-_ fis,-_ } |
-    d'8 d, d' bes8 r b4 c8 |
+    %\times 4/6 { c4 a-_ e'-_ gis,-_ fis'-_ fis,-_ } |
+    %d'8 d, d' bes8 r b4 c8 |
+    c8 a4 e'8 gis, fis' fis, d'8 |
+    d,4 d'8 bes r b4 c8 |
     r f,4 fis8 r gis4 d8 ~ |
     d d4 d8 ~ d fis a d |
     r fis,4 g8 r c4 b8 ~ |
-    b2.. a8 ~ |
-    a e4 f8 \times 2/3 { r4 g a } |
+    %b2.. a8 ~ |
+    %a e4 f8 \times 2/3 { r4 g a } |
+    b1 ~ |
+    b2 \times 2/3 { r4 g a } |
     b2 bis |
     cis2 ~ \times 2/3 { cis4 ais a } |
     \key fis \major
@@ -679,8 +687,9 @@ six = \relative c, {
     gis4. gis8 d'4. d8 |
     cis gis eis cis ~ cis cis'4 a8 |
     gis4 ais b fisis |
-    gis d' cis g |
-    gis bis cis b |
+    %gis d' cis g |
+    gis8 a b cis dis fisis,4 a8 |
+    gis4 bis cis b |
     ais e' dis ais |
     gis4 ais8 b cis dis eis cis |
     fis8 f e dis ~ dis a4 ais8 |
