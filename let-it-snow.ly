@@ -405,7 +405,7 @@ four = \relative c' {
     gis8 gis r4 r8 gis4 gis8 |
     a2 bes |
     fis8 fis4 r8 r eis8 ~ eis4 |
-    cis'8 cis cis4 cis b8 a ~ |
+    dis'8 dis cis4 cis b8 a ~ |
     a4. r8 r b b cis |
     r cis bis cis r a a fis |
     r gis a b r b4\ppp b8 |
