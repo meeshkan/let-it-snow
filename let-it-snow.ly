@@ -72,8 +72,8 @@ one = \relative c' {
     r c4 b8 r a4 d8 ~ |
     d c b c r c b a |
     r c4 b8 r a4 b8 ~ |
-    b a gis a r gis4 fis8 |
-    r a4 gis8 r fis4 b8 ~ |
+    b a gis a ~ a gis4 fis8 ~ |
+    fis a4 gis8 ~ gis fis4 b8 ~ |
     b2 \times 2/3 { r4 dis d } 
     cis2 \times 2/3 { r8 cis, ( dis } \times 2/3 { fis gis ) ais } |
     \key fis \major
@@ -189,8 +189,8 @@ two = \relative c' {
     r g4 gis8 r e4 bes'8 ~ |
     bes gis g a r a fis fis ~ |
     fis gis4 fis8 r fis4 gis8 ~ |
-    gis fis eis fis r e4 dis8 ~ |
-    dis e4 dis8 r e4 fis8 ~ |
+    gis fis eis fis ~ fis e4 dis8 ~ |
+    dis e4 dis8 ~ dis e4 fis8 ~ |
     fis2 \times 2/3 { r4 fis fisis } |
     gis4 ( fisis8 gis ) \times 2/3 { r8 cis,4 ( } \times 2/3 { dis8 fis ) ais } |
     \key fis \major
@@ -309,8 +309,8 @@ three = \relative c' {
     dis e4 e8 r dis4 e8 ~ |
     %e dis dis d r cis4 bes8 ~ |
     %bes cis4 cis8 r cis4 dis8 ~ |
-    e dis dis dis ~ dis cis b8 cis8 |
-    r8 b r a r cis r dis8 ~ |
+    e dis dis dis ~ dis cis b8 cis8 ~ |
+    cis8 b4 a8 ~ a cis4 dis8 ~ |
     dis2 \times 2/3 { r4 ais4 ais } |
     b2 \times 2/3 { r8 cis4 ~ ( } \times 2/3 { cis8 dis ) fis } |
     \key fis \major
@@ -432,9 +432,9 @@ four = \relative c' {
     r cis4 c8 r bes4 e8 ~ |
     e e cis b r b cis c ~ |
     c cis4 c8 r c4 cis8 ~ |
-    cis4. b8 ~ b a gis a |
-    r gis r fis r a r ais ~ |
-    \times 2/3 { ais4 cis dis } dis2 |
+    cis4. b8 ~ b a gis a ~ |
+    a fis4. r8 b4 a8 ~ |
+    \times 2/3 { a4 cis dis } dis2 |
     \times 2/3 { r4 eis disis } eis disis |
     \key fis \major
     dis4 d dis4. d8 |
@@ -553,7 +553,7 @@ five = \relative c' {
     %a ais b g r eis4 e8 ~ |
     %e gis4 a8 r d,4 r8 |
     a2. r8 b ~ |
-    b a gis a r gis r fis |
+    b a gis a ~ a gis4 fis8 |
     \times 2/3 { r4 ais b } a2 |
     \times 2/3 { r4 dis4 b } ais ais |
     \key fis \major
@@ -642,7 +642,7 @@ six = \relative c, {
     fis4 fis c'4 c |
     b8 fis dis b r cis'4 eis,8 |
     fis8 fis gis4 a eis8 fis ~ |
-    fis8 a cis fis \times 2/3 { r4 cis eis, } | % would be better to have a Collier out-of-time walk here
+    \times 4/6 { fis4 a cis fis cis eis, } | % would be better to have a Collier out-of-time walk here
     \times 2/3 { fis fis a } b8 b4 b8 |
     gis8 b gis e r d4 g8 ~ |
     g8 g b4 d des |
