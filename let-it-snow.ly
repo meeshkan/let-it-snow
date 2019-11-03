@@ -544,7 +544,7 @@ five = \relative c' {
     e8 e b8 b b'8 b a4 |
     gis fis e8 b r4 |
     r8 cis4 cis8 fis4. gis8 |
-    fis4. e8 dis8 cis4 r8 |
+    fis4. e8 dis8 b4 r8 |
     r cis ~ cis4 cis'8 cis b4 |
     a gis8 fis ~ fis4. r8 |
     r a a a r fis dis e |
