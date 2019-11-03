@@ -839,6 +839,8 @@ muzak = \new ChoirStaff <<
 }
 
 \paper {
+    top-margin=2.0\cm
+    bottom-margin=2.0\cm
     left-margin=2.0\cm
     right-margin=2.0\cm
 }
