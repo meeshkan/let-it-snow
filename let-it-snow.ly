@@ -268,7 +268,7 @@ three = \relative c' {
     \key e \major
     \partial 4
     b8\ppp b |
-    cis8\f cis cis4 cis c |
+    cis8\f cis bis4 cis c |
     b8 gis r4 r8 b4 b8 |
     cis2 d |
     a8 a4 r8 r gis8 ~ gis4 |
