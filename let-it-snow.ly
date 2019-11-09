@@ -11,7 +11,7 @@ one = \relative c' {
     \key e \major
     \partial 4
     \tempo "Swung" 4=98
-    b8\f b |
+    b8\f b | %{
     b'8 b a4 gis fis |
     e8 b r4 r8 b4 b8 |
     fis'4. e8 fis4. e8 |
@@ -90,7 +90,7 @@ one = \relative c' {
     cis2 \times 2/3 { r4 cis b } |
     ais4 ( gisis ) ais gis |
     fis8 fis e fis dis fis d fis |
-    cis gisis ais fis r4 \bar "|." % end
+    cis gisis ais fis r4 \bar "|." % end %}
 }
 
 oneL = \lyricmode {
@@ -190,8 +190,7 @@ two = \relative c' {
     fis fis gis-. r r2 |
     r8 b, cis cis r cis-. r b'8 ~ |
     b a g e8-. s2^\markup \italic "solo" |
-    s1*3 |
-    s1*7
+    s1 s s s s s s s s s |
     s2.. a8 ~ |
     a8 a a aes r fis4 e8 |
     r g4 gis8 r e4 bes'8 ~ |
@@ -309,7 +308,7 @@ three = \relative c' {
     b b b-. r r2 |
     r8 b b bes r bes-. r gis'8 ~ |
     gis fis e dis8-. s2^\markup \italic "solo" |
-    s1*3 |
+    s1 s s |
     s2 r2 |
     r8 gis-. r gis-. r ais-. r g ~ |
     g a b-. r r2 |
@@ -444,7 +443,7 @@ four = \relative c' {
     g g g-. r r2 |
     r8 g g a r a4 b8 ~ |
     b8 b s4^\markup \italic "solo" s2 |
-    s1*3 |
+    s1 s s |
     s2 r2 |
     r8 cis-. r cis-. r e-. r dis ~ |
     dis e fis-. r r2 |
@@ -576,7 +575,7 @@ five = \relative c' {
     \times 2/3 { a-. a a } a8 fis4 dis8 |
     e-. gis e gis r fis4 a8 ~ |
     a8 a s4^\markup \italic "solo" s2 |
-    s1*4 |
+    s1 s s s |
     r8 a-. r a-. r fis-. r g ~ |
     g g g-. r8 r2 |
     r8 b a aes r g-. r e'8 ~ |
@@ -589,7 +588,7 @@ five = \relative c' {
     d e fis-. r r2 |
     r8 b, b b r b b b ~ |
     b1 |
-    s1*6^\markup \italic "solo"
+    s1^\markup \italic "solo" s s s s s |
     s2.. bes8 ~ |
     bes8 b c a r g4 fis8 |
     r gis4 a8 r fis4 aes8 ~ |
@@ -808,32 +807,14 @@ sixL = \lyricmode {
     cold.
 }
 
-unfoldSwing = #(define-music-function (parser location tp) (integer?)
-#{
-  \set Score.tempoWholesPerMinute = #(ly:make-moment (/ (* 3 tp) 2) 8 0 0)
-  s8
-  \set Score.tempoWholesPerMinute = #(ly:make-moment (* 3 tp) 8 0 0)
-  s8
-#})
-
 muzak = \new ChoirStaff <<
     \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" { \clef "treble_8" \one } \new Lyrics \lyricsto "one" \oneL >>
-    \new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" { \clef "treble_8" \two } \new Lyrics \lyricsto "two" \twoL >>
-    \new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" { \clef "treble_8" \three } \new Lyrics \lyricsto "three" \threeL >>
-    \new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" { \clef "treble_8" \four } \new Lyrics \lyricsto "four" \fourL >>
-    \new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" { \clef "treble_8" \five } \new Lyrics \lyricsto "five" \fiveL >>
-    \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" { \clef "bass" \six } \new Lyrics \lyricsto "six" \sixL >>
+    %\new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" { \clef "treble_8" \two } \new Lyrics \lyricsto "two" \twoL >>
+    %\new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" { \clef "treble_8" \three } \new Lyrics \lyricsto "three" \threeL >>
+    %\new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" { \clef "treble_8" \four } \new Lyrics \lyricsto "four" \fourL >>
+    %\new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" { \clef "treble_8" \five } \new Lyrics \lyricsto "five" \fiveL >>
+    %\new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" { \clef "bass" \six } \new Lyrics \lyricsto "six" \sixL >>
 >>
-
-\score {
-    \muzak
-    \layout { \Score { \override DynamicText.stencil = ##f }}
-}
-
-\score {
-    << { \unfoldRepeats \muzak } { \repeat unfold 312 { \unfoldSwing #98 } } >>
-    \midi {}
-}
 
 \header {
     title = "Let it snow"
@@ -849,3 +830,76 @@ muzak = \new ChoirStaff <<
     right-margin=2.0\cm
 }
 #(set-global-staff-size 15.00)
+
+%\score {
+%    \muzak
+%    \layout { \Score { \override DynamicText.stencil = ##f }}
+%}
+
+#(define (swing-duration d now)
+    (let ((lg (ly:duration-log d)) (dt (ly:duration-dot-count d)) (fac (ly:duration-scale d)))
+        ;(format #t "~a ~a ~a ~a\n" now lg dt fac)
+        (cond
+            ; quarter
+            ((and (equal? lg 2) (and (equal? dt 0) (equal? fac 1)))
+                (cons d (+ now 1)))
+            ; quarter in triplet
+            ((and (equal? lg 2) (and (equal? dt 0) (equal? fac 2/3)))
+                (cons d (+ now 2/3)))
+            ; eighth
+            ((and (equal? lg 3) (and (equal? dt 0) (equal? fac 1)))
+                (cons (if (equal? (denominator now) 1) (ly:make-duration 3 0 4 3) (ly:make-duration 3 0 2 3)) (+ now 1/2)))
+            ; eighth triplet
+            ((and (equal? lg 3) (and (equal? dt 0) (equal? fac 2/3)))
+                (cons d (+ now 1/3)))
+            ; dotted quarter
+            ((and (equal? lg 2) (and (equal? dt 1) (equal? fac 1)))
+                (cons (if (equal? (denominator now) 1) (ly:make-duration 2 1 10 9) (ly:make-duration 2 1 8 9)) (+ now 3/2)))
+            ; half
+            ((and (equal? lg 1) (and (equal? dt 0) (equal? fac 1)))
+                (cons d (+ now 2)))
+            ; dotted half
+            ((and (equal? lg 1) (and (equal? dt 1) (equal? fac 1)))
+                (cons d (+ now 3)))
+            ; double dotted half
+            ((and (equal? lg 1) (and (equal? dt 2) (equal? fac 1)))
+                (cons (if (equal? (denominator now) 1) (ly:make-duration 1 2 22 21) (ly:make-duration 1 2 20 21)) (+ now 7/2)))
+            ; whole
+            ((and (equal? lg 0) (and (equal? dt 0) (equal? fac 1)))
+                (cons d (+ now 4)))
+            (else (error "foo" "bar")))))
+
+#(define (swing music now)
+   (let ((es (ly:music-property music 'elements))
+         (e (ly:music-property music 'element))
+         (d (ly:music-property music 'duration)))
+    ;(format #t "incoming now ~a\n" now)
+     (if (pair? es)
+        (let ((bar (fold (lambda (x y) (let ((newb (swing x (cdr y)))) (begin
+            ;(format #t "fuck ~a\n" ly:context-current-moment)
+            (cons (cons (car newb) (car y)) (cdr newb))))) (cons '() now) es)))
+         (cons (ly:music-set-property!
+          music 'elements
+           (reverse (car bar))) (cdr bar))))
+     (if (ly:music? e)
+        (let ((foo (swing e now)))
+        (begin (format "dip muz ~a \n" (cdr foo))
+         (cons (ly:music-set-property!
+          music 'element (car foo)) (cdr foo)))))
+     (if (ly:duration? d)
+        (let ((ugh (swing-duration d now)))
+         (begin
+             (format #t "dip dur ~a\n" (cdr ugh))
+           (set! d (car ugh))
+           (cons (ly:music-set-property! music 'duration d) (cdr ugh)))))
+     (begin (format #t "ignore ~a\n" now) (cons music now))))
+
+swingMusic =
+#(define-music-function (parser location m)
+   (ly:music?)
+   (car (swing m 0)))
+
+\score {
+    \swingMusic \muzak
+    \midi {}
+}
