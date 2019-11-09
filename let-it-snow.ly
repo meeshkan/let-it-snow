@@ -11,7 +11,7 @@ one = \relative c' {
     \key e \major
     \partial 4
     \tempo "Swung" 4=98
-    b8\f b | %{
+    b8\f b |
     b'8 b a4 gis fis |
     e8 b r4 r8 b4 b8 |
     fis'4. e8 fis4. e8 |
@@ -90,7 +90,7 @@ one = \relative c' {
     cis2 \times 2/3 { r4 cis b } |
     ais4 ( gisis ) ais gis |
     fis8 fis e fis dis fis d fis |
-    cis gisis ais fis r4 \bar "|." % end %}
+    cis gisis ais fis r4 \bar "|." % end
 }
 
 oneL = \lyricmode {
@@ -809,11 +809,11 @@ sixL = \lyricmode {
 
 muzak = \new ChoirStaff <<
     \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" { \clef "treble_8" \one } \new Lyrics \lyricsto "one" \oneL >>
-    %\new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" { \clef "treble_8" \two } \new Lyrics \lyricsto "two" \twoL >>
-    %\new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" { \clef "treble_8" \three } \new Lyrics \lyricsto "three" \threeL >>
-    %\new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" { \clef "treble_8" \four } \new Lyrics \lyricsto "four" \fourL >>
-    %\new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" { \clef "treble_8" \five } \new Lyrics \lyricsto "five" \fiveL >>
-    %\new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" { \clef "bass" \six } \new Lyrics \lyricsto "six" \sixL >>
+    \new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" { \clef "treble_8" \two } \new Lyrics \lyricsto "two" \twoL >>
+    \new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" { \clef "treble_8" \three } \new Lyrics \lyricsto "three" \threeL >>
+    \new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" { \clef "treble_8" \four } \new Lyrics \lyricsto "four" \fourL >>
+    \new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" { \clef "treble_8" \five } \new Lyrics \lyricsto "five" \fiveL >>
+    \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" { \clef "bass" \six } \new Lyrics \lyricsto "six" \sixL >>
 >>
 
 \header {
@@ -831,42 +831,48 @@ muzak = \new ChoirStaff <<
 }
 #(set-global-staff-size 15.00)
 
-%\score {
-%    \muzak
-%    \layout { \Score { \override DynamicText.stencil = ##f }}
-%}
+\score {
+    \muzak
+    \layout { \Score { \override DynamicText.stencil = ##f }}
+}
 
-#(define (swing-duration d now)
+% use hack because otherwise
+% the information on where we are in the piece
+% is not getting passed around
+% keeps resetting on 0
+#(define hack 0)
+
+#(define (swing-duration d ignoreMe)
     (let ((lg (ly:duration-log d)) (dt (ly:duration-dot-count d)) (fac (ly:duration-scale d)))
-        ;(format #t "~a ~a ~a ~a\n" now lg dt fac)
+        ;(format #t "~a ~a ~a ~a\n" hack lg dt fac)
         (cond
             ; quarter
             ((and (equal? lg 2) (and (equal? dt 0) (equal? fac 1)))
-                (cons d (+ now 1)))
+                (begin (set! hack (+ hack 1)) (cons d (+ hack 1))))
             ; quarter in triplet
             ((and (equal? lg 2) (and (equal? dt 0) (equal? fac 2/3)))
-                (cons d (+ now 2/3)))
+                (begin (set! hack (+ hack 2/3)) (cons d (+ hack 2/3))))
             ; eighth
             ((and (equal? lg 3) (and (equal? dt 0) (equal? fac 1)))
-                (cons (if (equal? (denominator now) 1) (ly:make-duration 3 0 4 3) (ly:make-duration 3 0 2 3)) (+ now 1/2)))
+                (begin (set! hack (+ hack 1/2)) (cons (if (equal? (denominator hack) 1) (ly:make-duration 3 0 2 3) (ly:make-duration 3 0 4 3)) (+ hack 1/2))))
             ; eighth triplet
             ((and (equal? lg 3) (and (equal? dt 0) (equal? fac 2/3)))
-                (cons d (+ now 1/3)))
+                (begin (set! hack (+ hack 1/3)) (cons d (+ hack 1/3))))
             ; dotted quarter
             ((and (equal? lg 2) (and (equal? dt 1) (equal? fac 1)))
-                (cons (if (equal? (denominator now) 1) (ly:make-duration 2 1 10 9) (ly:make-duration 2 1 8 9)) (+ now 3/2)))
+                (begin (set! hack (+ hack 3/2)) (cons (if (equal? (denominator hack) 1) (ly:make-duration 2 1 8 9) (ly:make-duration 2 1 10 9)) (+ hack 3/2))))
             ; half
             ((and (equal? lg 1) (and (equal? dt 0) (equal? fac 1)))
-                (cons d (+ now 2)))
+                (begin (set! hack (+ hack 2)) (cons d (+ hack 2))))
             ; dotted half
             ((and (equal? lg 1) (and (equal? dt 1) (equal? fac 1)))
-                (cons d (+ now 3)))
+                (begin (set! hack (+ hack 3)) (cons d (+ hack 3))))
             ; double dotted half
             ((and (equal? lg 1) (and (equal? dt 2) (equal? fac 1)))
-                (cons (if (equal? (denominator now) 1) (ly:make-duration 1 2 22 21) (ly:make-duration 1 2 20 21)) (+ now 7/2)))
+                (begin (set! hack (+ hack 7/2)) (cons (if (equal? (denominator hack) 1) (ly:make-duration 1 2 20 21) (ly:make-duration 1 2 22 21)) (+ hack 7/2))))
             ; whole
             ((and (equal? lg 0) (and (equal? dt 0) (equal? fac 1)))
-                (cons d (+ now 4)))
+                (begin (set! hack (+ hack 4)) (cons d (+ hack 4))))
             (else (error "foo" "bar")))))
 
 #(define (swing music now)
@@ -883,16 +889,19 @@ muzak = \new ChoirStaff <<
            (reverse (car bar))) (cdr bar))))
      (if (ly:music? e)
         (let ((foo (swing e now)))
-        (begin (format "dip muz ~a \n" (cdr foo))
+        (begin
+            ;(format "dip muz ~a \n" (cdr foo))
          (cons (ly:music-set-property!
           music 'element (car foo)) (cdr foo)))))
      (if (ly:duration? d)
         (let ((ugh (swing-duration d now)))
          (begin
-             (format #t "dip dur ~a\n" (cdr ugh))
+             ;(format #t "dip dur ~a\n" (cdr ugh))
            (set! d (car ugh))
            (cons (ly:music-set-property! music 'duration d) (cdr ugh)))))
-     (begin (format #t "ignore ~a\n" now) (cons music now))))
+     (begin
+        ;(format #t "ignore ~a\n" now)
+        (cons music now))))
 
 swingMusic =
 #(define-music-function (parser location m)
