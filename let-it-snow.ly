@@ -697,7 +697,7 @@ six = \relative c, {
     gis8 gis d'4 cis gis8 g |
     fis4 fis c'4 c |
     b8 fis dis b r cis'4 eis,8 |
-    fis8 fis gis4 a eis8 fis ~ |
+    fis8 fis gis4 a eis |
     \times 4/6 { fis4 a cis fis cis eis, } | % would be better to have a Collier out-of-time walk here
     \times 2/3 { fis fis a } b8 b4 b8 |
     gis8 b gis e r d4 g8 ~ |
