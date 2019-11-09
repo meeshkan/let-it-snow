@@ -882,7 +882,6 @@ muzak = \new ChoirStaff <<
     ;(format #t "incoming now ~a\n" now)
      (if (pair? es)
         (let ((bar (fold (lambda (x y) (let ((newb (swing x (cdr y)))) (begin
-            ;(format #t "fuck ~a\n" ly:context-current-moment)
             (cons (cons (car newb) (car y)) (cdr newb))))) (cons '() now) es)))
          (cons (ly:music-set-property!
           music 'elements
