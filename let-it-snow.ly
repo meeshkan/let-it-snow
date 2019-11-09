@@ -168,8 +168,8 @@ two = \relative c' {
     dis4 dis8 dis cis4 e8 dis ~ |
     dis b\ppp \times 2/3 { dis fis gis } fis gis-. r e\f ~ |
     e e e e ~ e e fis a ~ |
-    a gis fis e dis b4\ppp b8 |
-    gis'8\f gis fis4 dis dis |
+    a gis fis e dis cis4 b8 |
+    gis'8 gis fis4 dis dis |
     cis8 b cis e-. \times 2/3 { r4 b cis } |
     e2 e |
     b8 ( dis b ) gis r8 cis4 b8 |
@@ -291,7 +291,7 @@ three = \relative c' {
     cis4 b8 b b4 cis8 b ~ |
     b b\ppp \times 2/3 { b dis\f dis } dis dis-. r cis ~ |
     cis cis cis cis ~ cis cis cis e ~ |
-    e e dis cis b b4\ppp b8 |
+    e e dis cis b a4 gis8 |
     cis8\f cis c4 cis c |
     b8 gis b cis \times 2/3 { r4 b b } |
     cis2 d |
@@ -430,8 +430,8 @@ four = \relative c' {
     b4 gis8 gis fis4 gis8 b ~ |
     b b \times 2/3 { b b b } b b-. r gis ~ |
     gis gis gis e ~ e e e fis ~ |
-    fis b a gis fis b4 b8 |
-    ais4. ais8 a4 a |
+    fis b a gis fis e4 dis8 |
+    ais'4. ais8 a4 a |
     gis8 e gis b \times 2/3 { r4 gis gis } |
     a2 bes |
     fis8 ( gis fis ) dis r8 eis4 eis8 |
