@@ -21,9 +21,9 @@ one = \relative c' {
     r b a gis r gis fis e |
     r b cis e r fis4 b,8 |
     b'8 b a4 gis fis |
-    e8 b r4 r8 b4 b8 |
+    e8 b4 r8 d8 b4 b8 |
     fis'4. e8 fis4. e8 |
-    dis8 b4 r8 r8 cis8 ~ cis4 |
+    dis8 ( b cis ) b ~ b8 cis8 ~ cis4 |
     cis'8 cis b4 a gis8 fis ~ |
     fis4. r8 r8 dis' cis b |
     r b a gis r gis fis e |
@@ -100,7 +100,7 @@ oneL = \lyricmode {
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     Oh, it does -- n't show signs of stop -- ping,
-    And I've brought some corn for pop -- ping.
+    No, And I've brought some corn for pop -- ping.
     The lights are turned way down low,
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
@@ -156,7 +156,7 @@ two = \relative c' {
     gis'8\f gis fis4 dis dis |
     cis8 b8 r4 r8 b4 b8 |
     e2 e |
-    b8 b4 r8 r4. cis8 |
+    b4. gis8 ~ gis8 r4 cis8 |
     eis2 ~ eis8 r eis8 gis, ~ |
     gis4. r8 r8 gis' gis gis |
     r gis fis fis r dis dis cis |
@@ -279,7 +279,7 @@ three = \relative c' {
     cis8\f cis cis4 r8 cis4 c8 |
     b8 gis r4 r8 b4 b8 |
     cis2 cis |
-    a8 a4 r8 r4 gis4 |
+    a4 ( gis8 ) fis ~ fis8 r gis4 |
     a8 a gis4 fis eis8 fis ~ |
     fis4. r8 r8 eis' eis e |
     r e e dis8 r cis c b8 |
@@ -415,9 +415,10 @@ four = \relative c' {
     r cis bis cis r a a fis |
     r gis a b r b4\ppp b8 |
     a8\f a a4 r8 a4 a8 |
-    b8 b r4 r8 gis4 gis8 |
+    %b8 b r4 r8 gis4 gis8 |
+    b8 b8 a4 gis4 eis |
     a2 ais |
-    fis8 fis4 r8 r4. b8 |
+    fis4. fis8 ~ fis8 r4 b8 |
     a8 a b4 cis d8 cis ~ |
     cis8 cis b4 a gis8 fis |
     r cis' bis cis r a a gis |
@@ -429,7 +430,7 @@ four = \relative c' {
     b4 gis8 gis fis4 gis8 b ~ |
     b b \times 2/3 { b b b } b b-. r gis ~ |
     gis gis gis e ~ e e e fis ~ |
-    fis b b fis fis b4 b8 |
+    fis b a gis fis b4 b8 |
     ais4. ais8 a4 a |
     gis8 e gis b \times 2/3 { r4 gis gis } |
     a2 bes |
@@ -491,8 +492,10 @@ fourL = \lyricmode {
     And since we've no place to go.
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
-    Oh, it does -- n't show signs of stop -- ping,
-    And I've brought corn pop -- ping.
+    Oh, it does -- n't show signs of %stop -- ping,
+    does -- n't show signs of
+    %And I've
+    brought corn pop -- ping.
     The lights are turned way down low, are turned way down low
     Let It Snow! Let It Snow!
     (ba doo wee)
@@ -546,7 +549,7 @@ five = \relative c' {
     fis8 dis4 r8 r cis8 ~ cis4 |
     a'8 a b4 fis gis8 gis ~ |
     gis4. r8 r gis gis a |
-    r a a a r fis dis e |
+    r a fis a r fis dis e |
     r gis a gis r a4 a8\mf |
     e8 e b8 b b'8 b a4 |
     gis fis e8 b r4 |
@@ -561,7 +564,7 @@ five = \relative c' {
     e4 e8 dis cis b4 cis8 |
     dis2 r8 dis4 cis8 |
     b4-_ cis-_ dis-_ e-_ |
-    fis-_ gis-_ ais-_ b8 dis ~ |
+    fis-_ gis-_ ais-_ fis8 dis' ~ |
     dis cis b cis ~ cis b cis cis ~ |
     cis b b b b8 b4\ppp b8 |
     e,8\f e dis4 fis dis |
@@ -624,7 +627,7 @@ fiveL = \lyricmode {
     Oh, it does -- n't Oh, it does -- n't show signs of stop -- ping,
     And I've brought some corn for pop -- ping.
     The lights are turned way down low,
-    Let It Snow! Let It Snow! Let It Snow!
+    Let It Snow! Let It Snow! (ba doo wee)
     When we
     fi -- nal -- ly kissed Good Night.
     How I hate go -- ing out to the storm.
@@ -674,8 +677,10 @@ six = \relative c, {
     r fis a b r b a gis |
     r8 b a gis r g4 a8 |
     fis4. fis8 b4 b8 b |
-    b'8 b a4 gis eis |
-    fis2 r8 fis,4 fis8 |
+    %b'8 b a4 gis eis |
+    %fis2 r8 fis,4 fis8 |
+    gis8 gis a4 ais b8 g |
+    fis4. cis'8-. r fis,4 fis8
     b8 dis fis b r4 eis,4 |
     fis2 r8 cis4 cis8 |
     fis,4 cis'8 fis8 r8 eis,4 fis8 |
@@ -686,7 +691,7 @@ six = \relative c, {
     cis-_ r fis,-_ r |
     b8-. b' ais gis fis e dis cis |
     r8 b4 gis8 fis4 e8 fis |
-    dis4. a'8 gis4. bis8 |
+    dis8 dis a' a gis ais bis gis |
     cis4 gis fis ais |
     b8 dis fis b r2 |
     fis,4. fis8 b4 a8 b |
@@ -761,16 +766,17 @@ sixL = \lyricmode {
     Let It Snow! Let It Snow! Let It Snow!
     (ba doo wee)
     Oh, it
-    dm ba dm Oh it does -- n't show signs of stop
-    dm ba
+    dm ba dm Oh it %does -- n't show signs of stop
+    %dm ba
+    dm ba dm dm dm ba dm ba dm ba
     dm ba di bow the lights
     Oh the lights are low
     Let snow! Let snow! Let snow!
     (ba doo wee)
     dm dm dm dm dm dm dm
     dm I hate the storm ba dm ba
-    dm you hold me so tight
-    me tight -- ly
+    dm you hold me so
+    tight no me a tigh -- ta -- ly no
     All way home be warm dm da' bow
     dm ba dm ba da
     dm ba dm dm ba da
