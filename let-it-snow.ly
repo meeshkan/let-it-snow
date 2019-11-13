@@ -7,9 +7,11 @@
 % fire
 % sauna
 
+scoreFront = { \partial 4 }
+midiFront = { s1 s2. }
+
 one = \relative c' {
     \key e \major
-    \partial 4
     \tempo "Swung" 4=98
     b8\f b |
     b'8 b a4 gis fis |
@@ -143,7 +145,6 @@ oneL = \lyricmode {
 
 two = \relative c' {
     \key e \major
-    \partial 4
     b8\ppp b |
     gis'8\f gis fis4 dis dis |
     cis8 b8 r4 r8 b4 b8 |
@@ -265,7 +266,6 @@ twoL = \lyricmode {
 
 three = \relative c' {
     \key e \major
-    \partial 4
     b8\ppp b |
     cis8\f cis bis4 cis c |
     b8 gis r4 r8 b4 b8 |
@@ -403,7 +403,6 @@ threeL = \lyricmode {
 
 four = \relative c' {
     \key e \major
-    \partial 4
     b8\ppp b |
     a8\f a a4 a a |
     gis8 gis r4 r8 gis4 gis8 |
@@ -540,7 +539,6 @@ fourL = \lyricmode {
 
 five = \relative c' {
     \key e \major
-    \partial 4
     b8\ppp b |
     e,8\f e e4 fis dis |
     e8 e r4 r8 gis4 gis8 |
@@ -665,7 +663,6 @@ fiveL = \lyricmode {
 
 six = \relative c, {
     \key e \major
-    \partial 4
     r4 |
     fis4. fis8 b4 a8 b |
     gis8 gis d'4 cis gis8 g |
@@ -808,12 +805,21 @@ sixL = \lyricmode {
 }
 
 muzak = \new ChoirStaff <<
-    \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" { \clef "treble_8" \one } \new Lyrics \lyricsto "one" \oneL >>
-    \new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" { \clef "treble_8" \two } \new Lyrics \lyricsto "two" \twoL >>
-    \new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" { \clef "treble_8" \three } \new Lyrics \lyricsto "three" \threeL >>
-    \new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" { \clef "treble_8" \four } \new Lyrics \lyricsto "four" \fourL >>
-    \new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" { \clef "treble_8" \five } \new Lyrics \lyricsto "five" \fiveL >>
-    \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" { \clef "bass" \six } \new Lyrics \lyricsto "six" \sixL >>
+    \new Staff \with { instrumentName = "Mike 1" shortInstrumentName = "M1" } << \new Voice = "one" { \clef "treble_8" \scoreFront \one } \new Lyrics \lyricsto "one" \oneL >>
+    \new Staff \with { instrumentName = "Mike 2" shortInstrumentName = "M2" } << \new Voice = "two" { \clef "treble_8" \scoreFront \two } \new Lyrics \lyricsto "two" \twoL >>
+    \new Staff \with { instrumentName = "Mike 3" shortInstrumentName = "M3" } << \new Voice = "three" { \clef "treble_8" \scoreFront \three } \new Lyrics \lyricsto "three" \threeL >>
+    \new Staff \with { instrumentName = "Mike 4" shortInstrumentName = "M4" } << \new Voice = "four" { \clef "treble_8" \scoreFront \four } \new Lyrics \lyricsto "four" \fourL >>
+    \new Staff \with { instrumentName = "Mike 5" shortInstrumentName = "M5" } << \new Voice = "five" { \clef "treble_8" \scoreFront \five } \new Lyrics \lyricsto "five" \fiveL >>
+    \new Staff \with { instrumentName = "Mike 6" shortInstrumentName = "M6" } << \new Voice = "six" { \clef "bass" \scoreFront \six } \new Lyrics \lyricsto "six" \sixL >>
+>>
+
+midiMuzak = \new ChoirStaff <<
+    \new Staff { \midiFront \one }
+    \new Staff { \midiFront \two }
+    \new Staff { \midiFront \three }
+    \new Staff { \midiFront \four }
+    \new Staff { \midiFront \five }
+    \new Staff { \midiFront \six }
 >>
 
 \header {
@@ -908,6 +914,6 @@ swingMusic =
    (car (swing m 0)))
 
 \score {
-    \swingMusic \muzak
+    \swingMusic \midiMuzak
     \midi {}
 }
