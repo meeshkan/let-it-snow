@@ -463,7 +463,7 @@ four = \relative c' {
     r cis4 c8 r bes4 e8 ~ |
     e e cis b r b cis c ~ |
     c cis4 c8 r c4 cis8 ~ |
-    cis4. b8 ~ b a gis a ~ |
+    cis4. b8 ~ b b gis a ~ |
     a fis4. r8 b4 a8 ~ |
     \times 2/3 { a4 cis dis } dis2 |
     \times 2/3 { r4 eis disis } eis disis |
@@ -608,7 +608,7 @@ five = \relative c' {
     r b b b r gis eis fis ~ |
     fis r fis eis ~ \times 2/3 { eis4 eis eis ~ } |
     eis2 \times 2/3 { cis4 fis gis } |
-    ais4 b8 ais ~ \times 2/3 { ais4 ais ais } |
+    ais4 cis8 ais ~ \times 2/3 { ais4 ais ais } |
     dis,2 dis4 dis4 |
     cis2 cis4 cis |
     fis8 fis fis fis dis dis eis eis |
@@ -741,7 +741,7 @@ six = \relative c, {
     cis gis eis cis ~ cis cis'4 a8 |
     gis4 ais b fisis |
     %gis d' cis g |
-    gis8 a b cis dis fisis,4 a8 |
+    gis8 ais b cis dis fisis,4 a8 |
     gis4 bis cis b |
     ais e' dis ais |
     gis4 ais8 b cis dis eis cis |
