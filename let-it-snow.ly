@@ -1,6 +1,6 @@
 \version "2.19.83"
 
-% studio
+% bike
 % snow
 % party
 % dev
