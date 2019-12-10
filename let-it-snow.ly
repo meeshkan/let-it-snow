@@ -45,11 +45,11 @@ one = \relative c' {
     \times 2/3 { cis'4 cis b4 } a4 gis8 gis ~ ( |
     gis fis eis fis-. ) \times 2/3 { r4 dis' cis } |
     \times 2/3 { b-. b a } gis8-. gis ( b ) gis |
-    e-. b cis e-. r fis-. r b ~ |
+    e-. b cis e-. r fis4 b8 ~ |
     b a g fis r2 |
     r8 g r g r a r fis ~ |
     fis g a r r2 |
-    r8 b, c e-. r fis-. r b ~ |
+    r8 b, c e-. r fis4 b8 ~ |
     b a g fis r2 |
     r8 g r g r a r fis ~ |
     fis g a r r2 |
