@@ -821,7 +821,7 @@ sixL = \lyricmode {
     dear we're still good --
     bye di dum bow But as
     long as you love me
-    so ba doo dit bow
+    so you love me so
     Let It Snow! Let It Snow! Let It
     ba doo wee bap wee ba
     \repeat unfold 107 ○
