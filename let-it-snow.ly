@@ -207,14 +207,14 @@ two = \relative c' {
     bes gis g a r a fis fis ~ |
     fis gis4 fis8 r fis4 gis8 ~ |
     gis fis e fis ~ fis e4 dis8 ~ |
-    dis fis4 dis8 ~ dis e4 fis8 ~ |
+    dis e4 dis8 ~ dis e4 fis8 ~ |
     fis2 \times 2/3 { r4 fis fisis } |
     gis4 ( fisis8 gis ) \times 2/3 { r8 cis,4 ( } \times 2/3 { dis8 fis ) ais } |
     \key fis \major
     ais4 ( gis4 ~ gis ) b, |
     cis8 ais4 gis8 fisis4 ais4 |
     dis2 fis |
-    r8 cis-. r cis-. r cisis-. r eis ~ |
+    dis8 cis4 cis8 ~ cis cisis4 eis8 ~ |
     eis4. r8 \times 2/3 { dis4 dis cis } |
     b4. ais8 gis ais' ais ais |
     r ais gis gis r eis eis dis ~ |
@@ -273,7 +273,7 @@ twoL = \lyricmode {
     Oh the fire is dy -- ing
     no dy -- ing
     dear still
-    bap bap bap bow
+    dear we're still good -- bye
     long as you love me so
     Let It Snow! Let It Snow! Let It Snow!
     doo wee doo wa
@@ -348,14 +348,14 @@ three = \relative c' {
     %e dis dis d r cis4 bes8 ~ |
     %bes cis4 cis8 r cis4 dis8 ~ |
     e2. r8 cis8 ~ |
-    cis8 b4 a8 ~ a cis4 dis8 ~ |
+    cis8 b4 b8 ~ b cis4 dis8 ~ |
     dis2 \times 2/3 { r4 ais4 ais } |
     b2 \times 2/3 { r8 cis4 ~ ( } \times 2/3 { cis8 dis ) fis } |
     \key fis \major
     fis2. eis4 |
     fis8 fis r eis, eis4 fis |
     b2 e |
-    r8 b-. r b-. r b-. r b ~ |
+    cis8 ais4 b8 ~ b b4 b8 ~ |
     b4. r8 \times 2/3 { b4 b ais } |
     \times 2/3 { dis4 dis cis } b8 fisis' fisis eis |
     r fis fis eis r dis d cis ~ |
@@ -414,7 +414,7 @@ threeL = \lyricmode {
     Oh the fire is dy -- ing
     no dy -- ing
     dear still
-    bap bap bap bow
+    dear we're still good -- bye
     long as you long as you love
     Let It Snow! Let It Snow! Let It Snow!
     doo wee
@@ -637,8 +637,8 @@ five = \relative c' {
     b2 gis2 |
     gis4 ais ~ ais ais4 |
     fis2 a |
-    r8 gis-. r gis-. r gis-. r fisis ~ |
-    fisis2 eis |
+    gis8 fisis4 gis8 ~ gis ais4 fis8 ~ |
+    fis2 eis |
     dis gis8 ais ais b |
     r b b b r gis eis fis ~ |
     fis r fis eis ~ \times 2/3 { eis4 eis eis ~ } |
@@ -693,7 +693,7 @@ fiveL = \lyricmode {
     the fire is dy -- ing
     my dear
     still
-    bap bap bap bow 
+    dear we're still good -- bye 
     as long so
     Let It Snow! Let It Snow! Let It Snow!
     doo wee doo wa
