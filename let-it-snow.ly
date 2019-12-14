@@ -355,7 +355,7 @@ three = \relative c' {
     fis2. eis4 |
     fis8 fis r eis, eis4 fis |
     b2 e |
-    cis8 ais4 b8 ~ b b4 b8 ~ |
+    cis8 ais4 b8 ~ b ais4 b8 ~ |
     b4. r8 \times 2/3 { b4 b ais } |
     \times 2/3 { dis4 dis cis } b8 fisis' fisis eis |
     r fis fis eis r dis d cis ~ |
