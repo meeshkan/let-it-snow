@@ -407,9 +407,8 @@ threeL = \lyricmode {
     can -- not sing the tune but I am try -- ing Oh when we fi -- nal -- ly
     kissed good -- night
     you know I hate go -- ing out to the storm
-    but babe when you %{real -- ly you real -- ly%} hold me tight
-    you
-    I'll
+    but babe when you %{real -- ly you real -- ly%} tight you know that
+    I
     I'll be warm
     Oh the fire is dy -- ing
     no dy -- ing
