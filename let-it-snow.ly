@@ -206,7 +206,7 @@ two = \relative c' {
     r g4 gis8 r e4 bes'8 ~ |
     bes gis g a r a fis fis ~ |
     fis gis4 fis8 r fis4 gis8 ~ |
-    gis fis fis fis ~ fis e4 dis8 ~ |
+    gis fis e fis ~ fis e4 dis8 ~ |
     dis e4 dis8 ~ dis e4 fis8 ~ |
     fis2 \times 2/3 { r4 fis fisis } |
     gis4 ( fisis8 gis ) \times 2/3 { r8 cis,4 ( } \times 2/3 { dis8 fis ) ais } |
@@ -347,7 +347,7 @@ three = \relative c' {
     dis e4 e8 r dis4 e8 ~ |
     %e dis dis d r cis4 bes8 ~ |
     %bes cis4 cis8 r cis4 dis8 ~ |
-    e e e dis ~ dis cis b8 cis8 ~ |
+    e2. r8 cis8 ~ |
     cis8 b4 a8 ~ a cis4 dis8 ~ |
     dis2 \times 2/3 { r4 ais4 ais } |
     b2 \times 2/3 { r8 cis4 ~ ( } \times 2/3 { cis8 dis ) fis } |
@@ -407,7 +407,7 @@ threeL = \lyricmode {
     can -- not sing the tune but I am try -- ing Oh when we fi -- nal -- ly
     kissed good -- night
     you know I hate go -- ing out to the storm
-    but babe when you real -- ly you real -- ly hold me tight
+    but babe when you %{real -- ly you real -- ly%} hold me tight
     you
     I'll
     I'll be warm
@@ -488,7 +488,7 @@ four = \relative c' {
     r cis4 c8 r bes4 e8 ~ |
     e e cis b r b cis c ~ |
     c cis4 c8 r c4 cis8 ~ |
-    cis4. b8 ~ b b gis a ~ |
+    cis4. b8 ~ b a gis a ~ |
     a fis4. r8 b4 a8 ~ |
     \times 2/3 { a4 cis dis } dis2 |
     \times 2/3 { r4 eis disis } eis disis |
