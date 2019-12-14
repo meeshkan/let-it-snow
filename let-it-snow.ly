@@ -207,7 +207,7 @@ two = \relative c' {
     bes gis g a r a fis fis ~ |
     fis gis4 fis8 r fis4 gis8 ~ |
     gis fis e fis ~ fis e4 dis8 ~ |
-    dis e4 dis8 ~ dis e4 fis8 ~ |
+    dis fis4 e8 ~ e dis4 fis8 ~ |
     fis2 \times 2/3 { r4 fis fisis } |
     gis4 ( fisis8 gis ) \times 2/3 { r8 cis,4 ( } \times 2/3 { dis8 fis ) ais } |
     \key fis \major
