@@ -621,8 +621,8 @@ five = \relative c' {
     R1 |
     r4 cis''4 ~ \times 2/3 { cis b cis }
     \times 2/3 { g8 fis e ~ } e4 ~ e r4 |
-    r4 e' ~ \times 2/3 { e cis b }
-    e8 e,-.  r e ~ e4. bes8 ~ |
+    r4 e ~ \times 2/3 { e cis c }
+    b8 b4 e8 ~ e4. bes8 ~ |
     bes8 b c a r g4 fis8 |
     r gis4 a8 r fis4 aes8 ~ |
     aes a bes g r g gis gis ~ |
