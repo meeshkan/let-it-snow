@@ -363,7 +363,7 @@ three = \relative c' {
     \times 2/3 { cis cis b } \times 2/3 { ais ais gis }
     fis4 fis8 fisis ~ \times 2/3 { fisis4 fis' fis } |
     fis ( eis ) dis fisis, |
-    gis ( eis ) ais b |
+    gis2 ais4 b |
     cis8 cis c c b b ais ais |
     gis fisis gis fis r4 \bar "|."
 
@@ -644,7 +644,7 @@ five = \relative c' {
     eis2 \times 2/3 { cis4 fis gis } |
     ais4 cis8 ais ~ \times 2/3 { ais4 ais ais } |
     dis,2 dis4 dis4 |
-    cis2 cis4 cis |
+    fis4 ( eis ) cis4 cis |
     fis8 fis fis fis dis dis eis eis |
     dis dis dis fis r4 \bar "|."
 }
@@ -787,8 +787,8 @@ six = \relative c, {
     ais e' dis ais |
     gis4 ais8 b cis dis eis cis |
     fis8 f e dis ~ dis a4 ais8 |
-    gis4 gis' fis dis |
-    eis cis b gis |
+    gis4 gis' gis, gis |
+    cis cis b gis |
     fis ais b bis |
     cis r8 fis,8 r4 \bar "|."
 }
